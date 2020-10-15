@@ -1,0 +1,22 @@
+body {
+	background-color: #048BA8;
+}
+
+#titulo {
+	font-family: "Roboto", "Lucida Console";
+	color: #FFF;
+	font-size: 64px;
+	text-align: center;
+	background-color: #000; /*apagar*/
+	float: left;
+	width: 45%;
+	margin-top: 300px;
+}
+
+#login {
+	background-color: red;
+	float: left;
+	width: 45%;
+	margin-top: 200px;
+	margin-right: 50px;
+}
