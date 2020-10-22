@@ -1,44 +1,102 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-	<head>
-		<meta charset="utf-8"/>
-		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-		<link rel="stylesheet" href="css/layout.css"/>
-		<title>index</title>
+  <html lang="pt-br>
+    <head>
+			<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+			<meta charset="utf-8">
+      <!--Import Google Icon Font-->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+			<!--Import Google Fonts-->
+			<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,800&display=swap">
+			<!--Materialize-->
+			<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+			<!--Arquivo CSS-->
+			<link rel="stylesheet" href="css/layout.css">
+			<title>Materialize</title>
+      
+    </head>
 
-	</head>
-	<body>
-		<div id="barra">
-			<!--<img id="logo" src="images/logo.png" width="80px">-->
-			<h2 id="ludus">LUDUS</h2>
-			<ul id="navegacao" style="list-style-type: none;">
-				<li><a href="#">SOBRE</a></li>
-				<li><a href="#">JOGOS</a></li>
-				<li><a href="#">RANKING</a></li>
-				<li><a href="#">CONFIGURAÇÕES</a>
-					<li><a href="#">LOGOUT</a></li></li>
+    <body>
+			<nav id="top" class="z-depth-4">
+				<div class="nav-wrapper">
+					<a href="#!" class="brand-logo"><b>LUDUS</b></a>
+					<a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+					<ul class="right hide-on-med-and-down">
+						<li><a href="#">Sobre</a></li>
+						<li><a href="#">Jogos</a></li>
+						<li><a href="#">Ranking</a></li>
+						<li><a href="#">Configurações</a></li>
+						<li><a href="#"><i class="material-icons">power_settings_new</i></a></li>
+					</ul>
+				</div>
+			</nav>
+				
+			<ul class="sidenav" id="mobile-demo">
+				<li><a href="#"><i class="material-icons">clear</i></a></li>
+				<li><a href="#"><i class="material-icons">info</i>Sobre</a></li>
+				<li><a href="#"><i class="material-icons">sports_esports</i>Jogos</a></li>
+				<li><a href="#"><i class="material-icons">emoji_events</i>Rankings</a></li>
+				<li><a href="#"><i class="material-icons">settings</i>Configurações</a></li>
+				<li><a href="#"><i class="material-icons">power_settings_new</i>Logout</a></li>
 			</ul>
-		</div><!--Barra de navegação-->
-		<div id="caixa1">
-			<div id="caixa2">
-				<div id="caixa3">
-					<img src="images/foto.png" width="150">
-					<div id="nomePerfil">
-						<h2>L4Y0N</h2>
-						<h3>_______________________________________</h3>
-				</div><!--Terceira caixa - Perfil-->
-				<div id="caixa4">
-					<h3>Amigos</h3>
-					<div id="linha1">
-						<img id="ft1" src="images/mel.jpg" width="100">
-						<img id="ft2" src="images/will.jpg" width="100">
-						<img id="ft3" src="images/thay.jpg" width="100">
-					</div><!--Primeira lista de amigos-->
-				</div><!--Quarta caixa - Lista de amigos-->
-			</div><!--Segunda caixa-->
-		</div><!--Primeira caixa-->
-		<div id="rodape">
 			
-		</div>
-		</body>
-</html>
+			<div class="row">
+				<div id="bloco1" class="col s1 m1 l4"></div><!--Lateral esquerda da página-->
+				<div id="bloco2" class="col s10 m10 l4 z-depth-4">
+					<div id="perfil" class="col s10 offset-s1 z-depth-4">
+						<div id="fotoPerfil" class="col s4 offset-s4">
+							<p>Imagem</p>
+						</div><!--Foto de perfil-->
+						<div id="usuario" class="col s4 offset-s4">
+							<p>Nome do Usuário</p>
+						</div><!--Nome do usuário-->
+						<div id="icone" class="col s4">
+							<i class="small material-icons">person_add</i>
+						</div><!--Icone-->
+						<div class="col s12">
+							<div class="divider"></div><!--Divisória-->
+						</div>
+						<div class="col s12">
+							<p>Amigos</p>
+						</div><!--Amigos-->
+						<div id="perfisAmigos" class="row">
+							<div class="col s4">
+								<p>Foto</p>
+							</div>
+							<div class="col s4">
+								<p>Foto</p>
+							</div>
+							<div class="col s4">
+								<p>Foto</p>
+							</div>
+							<div class="col s4">
+								<p>Foto</p>
+							</div>
+							<div class="col s4">
+								<p>Foto</p>
+							</div>
+							<div class="col s4">
+								<p>Foto</p>
+							</div>
+							<div class="col s12">
+								<a class=" col s6 offset-s3 waves-effect waves-light btn center-align">Ver todos os amigos</a>
+							</div><!--Botão-->
+						</div><!--Perfil de amigos-->
+						<div class="col s12">
+							<div class="divider"></div><!--Divisória-->
+						</div>
+						<div class="col s12">
+							<p>Conquistas</p>
+						</div><!--Conquistas-->
+					</div><!--Bloco do perfil-->
+				</div>
+				<div id="bloco3" class="col s1 m1 l4"></div><!--Lateral direita da página-->
+			</div>
+			
+			<!--jquery-->
+			<script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" 
+			crossorigin="anonymous"></script>
+      <!--Script ajax Materialize-->
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+      <script src="js/auto.js"></script>
+    </body>
+  </html>

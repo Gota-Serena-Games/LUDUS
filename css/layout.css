@@ -1,145 +1,48 @@
+/*Formatações gerais*/
+
 body {
-	background-color: #048BA8;
-}
-
-li {
-	display: inline;
-	padding: 5px;
-	margin: 5px;
-}
-
-li a {
-	text-decoration: none;
-	color: white;
-	text-align: center;
 	font-family: "Roboto";
-	font-size: 20px;
+	background-color: #048BA8;
 }
 
-#barra {
+#top {
 	background-color: #048BA8;
-	box-shadow: 0px 0px 10px;
-	position: absolute;
-	width: 100%;
+	padding: 1em;
+	height: 6em;
+}
+
+#bloco2 {
+	background-color: rgba(153, 194, 77, .8);
+	height: 800px;
+	border-bottom-left-radius: 16px;
+	border-bottom-right-radius: 16px;
+	padding-top: 20px;
+}
+
+#bloco2 div#perfil {
+	
+	height: 740px;
+	border-radius: 16px;
+}
+
+#fotoPerfil p {
+	text-align: center;
+	background-color: red;
 	height: 100px;
-	z-index: 1;
-	margin-left: -10px;
+}
+
+#usuario p {
+	text-align: center;
+	background-color: white;
+	height: 100px;
 	margin-top: -10px;
-	margin-right: -250px;
-
 }
 
-#logo {
-	margin-top: 10px;
-	margin-left: 10px;
-	float: left;
-}
-
-#ludus {
-	margin-top: 25px;
-	margin-left: 40px;
-	float: left;
-	font-size: 40px;
-	font-family: "Roboto";
+#icone i {
 	color: white;
 }
-
-#navegacao {
-	margin-top: 40px;
-	margin-right: 50px;
-	float: right;
-	overflow: hidden;
-}
-
-#caixa1 {
-	background-color: rgb(153, 194, 77);
-	box-shadow: 10px, 10px, 10px;
-	width: 580px;
-	height: 1050px;
-	z-index: -1;
-	float: left;
-	margin-left: 360px;
-	border-bottom-right-radius: 28px;
-	border-bottom-left-radius: 28px;
-}
-
-#caixa2 {
-	background-color: rgb(153, 194, 77, 0.8);
-	box-shadow: 0px 0px 10px;
-	width: 500px;
-	height: 880px;
-	position: absolute;
-	z-index: 0;
-	margin-top: 120px;
-	margin-left: 2.5em;
-	border-radius: 28px;
-}
-
-#caixa3 {
-	width: 500px;
-	height: 200px;
-	/*background: yellow;*/
-}
-
-#caixa3 img {
-	position: relative;
-	border-radius: 50%;
-	margin-left: 11em;
-	margin-top: 1em;
-}
-
-#nomePerfil {
-	width: 500px;
-	height: 30px;
-	/*background: orange;*/
-	margin-top: -10px;
-}
-
-#nomePerfil h2 {
-	font-family: "Roboto";
-	font-size: 20px;
-	color: #2E4057;
+#perfisAmigos p {
 	text-align: center;
-	padding-top: 3px;
-	/*background: blue;*/
-}
-#nomePerfil h3 {
-	text-align: center;
-	/*background: white;*/
-	margin-top: -15px;
-}
-
-#caixa4 {
-	width: 460px;
-	height: 350px;
-	margin-left: 20px;
-	margin-top: 25px;
-	/*background: red;*/
-}
-
-#caixa4 h3 {
-	font-family: "Roboto";
-	color: #2E4057;
-	margin-left: 45px;
-	padding-top: 5px;
-}
-
-#linha1 {
-	width: 440px;
-	height: 120px;
-	margin-left: 10px;
-	padding-top: 2px;
-	/*background: blue;*/
-}
-
-#rodape {
-	clear: both;
-	position: absolute;
-	z-index: 3;
-	width: 400px;
-	height: 50px;
-	margin-left: 80px;
-	margin-top: 1050px;
-	padding: 10px;
-	text-align: center;
+	height: 100px;
+	background-color: blue;
 }
