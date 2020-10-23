@@ -1,0 +1,88 @@
+/*Formatações gerais*/
+
+body {
+	font-family: "Roboto";
+	background-color: #048BA8;
+}
+
+#top {
+	background-color: #048BA8;
+	padding: 1em;
+	height: 6em;
+	z-index: 1;
+}
+
+#bloco2 {
+	background-color: rgb(153, 194, 77);
+	height: 800px;
+	border-bottom-left-radius: 16px;
+	border-bottom-right-radius: 16px;
+	padding-top: 20px;
+}
+
+#blocoPerfil {
+	background-color: rgb(153, 194, 77);
+	height: 800px;
+	border-bottom-left-radius: 16px;
+	border-bottom-right-radius: 16px;
+	padding-top: 20px;
+}
+
+#fotoPerfil img {
+	margin-top: 10px;
+}
+
+#usuario h5 {
+	text-align: center;
+	color: #2E4057;
+	margin-top: 10px;
+}
+
+#icone i {
+	color: white;
+	margin: 10px;
+}
+#perfisAmigos h6 {
+	text-align: center;
+	color: #2E4057;
+}
+
+#perfisAmigos img {
+	margin-top: 10px;
+}
+
+#btn {
+	margin-top: 10px;
+	font-size: 10px;
+	border-radius: 16px;
+}
+
+#chat i {
+	color: white;
+}
+
+.cor {
+	color: #2E4057;
+}
+
+.caixa {
+	background-color: rgba(153, 194, 77, .8);
+	height: 740px;
+	border-radius: 16px;
+}
+
+.caixa2 {
+	background-color: rgba(153, 194, 77, .8);
+	height: 647px;
+	border-radius: 16px;
+}
+.caixa2 p {
+	padding: 15px;
+}
+
+.titulos {
+	text-align: center;
+	color: #2E4057;
+	margin-top: 10px;
+	margin-bottom: 30px;
+}
