@@ -1,0 +1,262 @@
+body {
+    background-color: #048BA8;
+}
+
+/*
+Autor : William Lêdo 
+Data : 15/10/20
+index.html
+Autor : William Lêdo 
+Data : 15/10/20
+paginaLogin.html*/
+
+nav {
+    background-color: #048BA8;
+    border-bottom: 0.1px solid black;
+}
+
+.desliga {
+    position: relative;
+    top: 13px;
+}
+
+.logo {
+    font-size: 40px;
+}
+
+.desligarSite {
+    position: relative;
+    bottom: 9px;
+}
+
+.desligarMobile {
+
+    padding-left: 30px;
+
+}
+
+/* 
+Autor : William Lêdo 
+Data : 15/10/20
+paginaLogin.html
+*/
+
+#ludus {
+    color: white;
+    text-align: center;
+    font-size: 50px;
+    padding-top: 10%;
+    padding-bottom: 15%;
+
+}
+
+#logo {
+    font-size: 70px;
+}
+
+#divFora {
+    color: white;
+    background-color: #99C24D;
+    max-width: 90%;
+    margin-left: 5%;
+    border-radius: 25px;
+}
+
+#divDentro {
+    
+    background-color: #8bb43d;
+    max-width: 90%;
+    border-radius: 25px;
+    margin-left: 5%;
+    margin-top: 6%;
+    
+}
+
+.login {
+    padding-top: 4%;
+}
+
+.fazerConta {
+    padding-bottom: 4%;
+}
+
+#inputLogin {
+    
+    background-color: white;
+    border-radius: 10px;
+    margin-bottom: 4%;
+    width: 80%;
+    margin-left: 12%;
+    margin-top: 3%;
+}
+
+#inputSenha {
+    background-color: white;
+    border-radius: 10px;
+    margin-bottom: 8%;
+    width: 80%;
+    margin-left: 12%;
+    margin-top: 3%;
+}
+
+#botaoEntrar {
+    margin-left: 37%;
+    border-radius: 30px;
+}
+
+h6 {
+    color: white;
+}
+
+.texto {
+    padding-top: 4%;
+    text-align: center;
+    color: white;
+    
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+
+
+@media only screen and (min-width: 600px) {
+
+    #ludus {
+        color: white;
+        text-align: center;
+        height: 70%;
+        position: absolute;
+        top: 35%;
+        left: 3%;
+       
+    }
+
+    #logo {
+        margin-top: 10%;
+        max-width: 500px;
+        font-size: 80px;
+    }
+    
+    #divFora {
+        color: white;
+        background-color: #99C24D;
+        max-width: 90%;
+        margin-left: 45%;
+        margin-top: 38%;
+        
+    }
+
+    
+    
+    .login {
+        padding-top: 4%;
+    }
+    
+    .fazerConta {
+        padding-bottom: 4%;
+    }
+    
+    #inputLogin {
+        
+        background-color: white;
+        border-radius: 10px;
+        margin-bottom: 4%;
+    }
+    
+    #inputSenha {
+        background-color: white;
+        border-radius: 10px;
+        margin-bottom: 8%;
+        width: 80%;
+        margin-left: 12%;
+        margin-top: 3%;
+    }
+    
+    #botaoEntrar {
+        margin-left: 37%;
+        border-radius: 30px;
+        
+    }
+    
+    h6 {
+        color: white;
+    }
+    
+    .texto {
+        padding-top: 4%;
+        text-align: center;
+        color: white;
+        
+    }
+    
+    a {
+        text-decoration: none;
+        color: white;
+    }
+    
+
+}
+
+@media only screen and (min-width: 700px) {
+    #divFora {
+        
+        margin-top: 30%;
+        
+    }
+
+    #ludus {
+        
+        top: 35%;
+        left: 5%;
+       
+    }
+}
+
+@media only screen and (min-width: 900px) {
+    #divFora {
+        
+        margin-top: 25%;
+        
+    }
+
+    #ludus {
+        
+        top: 35%;
+        left: 8%;
+       
+ 
+    }
+}
+
+@media only screen and (min-width: 1100px) {
+    #divFora {
+        
+        margin-top: 20%;
+        
+    }
+
+    #ludus {
+        
+        top: 35%;
+        left: 10%;
+       
+    }
+}
+
+@media only screen and (min-width: 1300px) {
+    #divFora {
+        
+        margin-top: 15%;
+        
+    }
+
+    #ludus {
+        
+        top: 29%;
+        left: 12%;
+       
+    }
+}
