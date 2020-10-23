@@ -12,7 +12,7 @@ body {
 }
 
 #bloco2 {
-	background-color: rgba(153, 194, 77, .8);
+	background-color: rgb(153, 194, 77);
 	height: 800px;
 	border-bottom-left-radius: 16px;
 	border-bottom-right-radius: 16px;
@@ -20,29 +20,44 @@ body {
 }
 
 #bloco2 div#perfil {
-	
+	background-color: rgba(153, 194, 77, .8);
 	height: 740px;
 	border-radius: 16px;
 }
 
-#fotoPerfil p {
-	text-align: center;
-	background-color: red;
-	height: 100px;
+#fotoPerfil img {
+	margin-top: 10px;
 }
 
-#usuario p {
+#usuario h5 {
 	text-align: center;
-	background-color: white;
-	height: 100px;
-	margin-top: -10px;
+	color: #2E4057;
+	margin-top: 10px;
 }
 
 #icone i {
 	color: white;
+	margin: 10px;
 }
-#perfisAmigos p {
+#perfisAmigos h6 {
 	text-align: center;
-	height: 100px;
-	background-color: blue;
+	color: #2E4057;
+}
+
+#perfisAmigos img {
+	margin-top: 10px;
+}
+
+#btn {
+	margin-top: 10px;
+	font-size: 10px;
+	border-radius: 16px;
+}
+
+#chat i {
+	color: white;
+}
+
+.cor {
+	color: #2E4057;
 }
