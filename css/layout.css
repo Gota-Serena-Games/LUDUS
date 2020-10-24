@@ -14,10 +14,12 @@ body {
 
 #bloco2 {
 	background-color: rgb(153, 194, 77);
-	height: 800px;
+	/*height: 800px;*/height: auto;
 	border-bottom-left-radius: 16px;
 	border-bottom-right-radius: 16px;
+	margin-left: -5px;
 	padding-top: 20px;
+	padding-bottom: 35px;
 }
 
 #blocoPerfil {
@@ -26,6 +28,7 @@ body {
 	border-bottom-left-radius: 16px;
 	border-bottom-right-radius: 16px;
 	padding-top: 20px;
+	/*margin-left: 10px;*/
 }
 
 #fotoPerfil img {
@@ -61,6 +64,10 @@ body {
 	color: white;
 }
 
+#conteudo {
+	/*background-color: white;*/
+}
+
 .cor {
 	color: #2E4057;
 }
@@ -73,7 +80,7 @@ body {
 
 .caixa2 {
 	background-color: rgba(153, 194, 77, .8);
-	height: 647px;
+	/*height: 647px;*/height: auto;
 	border-radius: 16px;
 }
 .caixa2 p {
@@ -85,4 +92,9 @@ body {
 	color: #2E4057;
 	margin-top: 10px;
 	margin-bottom: 30px;
+}
+
+.config {
+	text-align: justify;
+	color: #2E4057;
 }
