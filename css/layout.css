@@ -5,6 +5,11 @@ body {
 	background-color: #048BA8;
 }
 
+label {
+	font-family: "Roboto";
+	color: #2E4057 ;
+}
+
 #top {
 	background-color: #048BA8;
 	padding: 1em;
@@ -78,6 +83,19 @@ body {
 	border-radius: 16px;
 }
 
+.caixaPequena {
+	background-color: rgb(153, 194, 77);
+	height: 500px;
+	border-radius: 16px;
+}
+
+.caixaPequenaTransparencia {
+	background-color: rgba(153, 194, 77, .8);
+	height: 450px;
+	border-radius: 16px;
+	margin-top: 25px;
+}
+
 .caixa2 {
 	background-color: rgba(153, 194, 77, .8);
 	/*height: 647px;*/height: auto;
@@ -94,7 +112,30 @@ body {
 	margin-bottom: 30px;
 }
 
+.cabecalhos {
+	text-align: center;
+	color: white;
+	/*margin-top: 10px;
+	margin-bottom: 30px;*/
+}
+
+.descricoes {
+	text-align: justify;
+	color: #2E4057;
+	/*margin-top: 10px;
+	margin-bottom: 30px;*/
+}
 .config {
 	text-align: justify;
 	color: #2E4057;
+}
+
+.botao {
+	margin-top: 20px;
+	border-radius: 16px;
+}
+
+.inputs {
+	font-family: "Roboto";
+	color: #2E4057 ;
 }
