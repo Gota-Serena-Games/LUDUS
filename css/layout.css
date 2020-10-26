@@ -175,6 +175,11 @@ label {
 
 .telaBoasVindas {
 	margin-top: 250px;
+	color: white;
+}
+
+.telaInicial{
+	margin-top: 250px;
 }
 
 .fadeIn {
