@@ -36,6 +36,16 @@ label {
 	/*margin-left: 10px;*/
 }
 
+#blocoPerfil2 {
+	background-color: rgb(153, 194, 77);
+	height: auto;
+	border-bottom-left-radius: 16px;
+	border-bottom-right-radius: 16px;
+	padding-top: 20px;
+	padding-bottom: 85px; 
+	/*margin-left: 10px;*/
+}
+
 #fotoPerfil img {
 	margin-top: 10px;
 }
@@ -70,11 +80,12 @@ label {
 }
 
 #conteudo {
-	height: 1000px;
+	height: 800px;
 }
 
 #facebook {
 	color: white;
+	margin: 0px;
 }
 
 .cor {
@@ -92,15 +103,14 @@ label {
 	border-radius: 16px;
 	padding-top: 10px;
 	margin-top: 20px;
-	height: 700px;
+	height: 600px;
 }
 
 .caixaPequenaTransparencia {
 	background-color: rgba(153, 194, 77, .8);
-	height: 650px;
+	height: 550px;
 	border-radius: 16px;
 	margin-top: 25px;
-	padding-bottom: 50px;
 }
 
 .caixa2 {
@@ -110,6 +120,7 @@ label {
 }
 .caixa2 p {
 	padding: 15px;
+	padding-bottom: 20px;
 }
 
 .titulos {
@@ -117,6 +128,13 @@ label {
 	color: #2E4057;
 	margin-top: 30px;
 	margin-bottom: 30px;
+}
+
+.titulos2 {
+	text-align: center;
+	color: #2E4057;
+	margin-top: 20px;
+	margin-bottom: 5px;
 }
 
 .cabecalhos {
@@ -138,7 +156,7 @@ label {
 }
 
 .botao {
-	margin-top: 20px;
+	margin-top: 10px;
 	border-radius: 16px;
 }
 
@@ -149,4 +167,36 @@ label {
 
 .tela {
 	background: rgb(153, 194, 77);
+}
+
+.boasVindas {
+	background-color: rgb(153, 194, 77);
+}
+
+.telaBoasVindas {
+	margin-top: 250px;
+}
+
+.fadeIn {
+-webkit-animation: fadeIn 3s ease-in-out;
+-moz-animation: fadeIn 3s ease-in-out;
+-o-animation: fadeIn 3s ease-in-out;
+animation: fadeIn 3s ease-in-out;
+}
+
+@-webkit-keyframes fadeIn {
+0% { opacity: 0; }
+100% { opacity: 1; } 
+}
+@-moz-keyframes fadeIn {
+0% { opacity: 0;}
+100% { opacity: 1; }
+}
+@-o-keyframes fadeIn {
+0% { opacity: 0; }
+100% { opacity: 1; }
+}
+@keyframes fadeIn {
+0% { opacity: 0; }
+100% { opacity: 1; }
 }
