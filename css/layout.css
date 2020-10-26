@@ -70,7 +70,11 @@ label {
 }
 
 #conteudo {
-	/*background-color: white;*/
+	height: 1000px;
+}
+
+#facebook {
+	color: white;
 }
 
 .cor {
@@ -85,17 +89,18 @@ label {
 
 .caixaPequena {
 	background-color: rgb(153, 194, 77);
-	height: 500px;
 	border-radius: 16px;
 	padding-top: 10px;
 	margin-top: 20px;
+	height: 700px;
 }
 
 .caixaPequenaTransparencia {
 	background-color: rgba(153, 194, 77, .8);
-	height: 450px;
+	height: 650px;
 	border-radius: 16px;
 	margin-top: 25px;
+	padding-bottom: 50px;
 }
 
 .caixa2 {

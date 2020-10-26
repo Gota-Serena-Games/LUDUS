@@ -18,36 +18,50 @@
     <body>
 
 		<div class="row">
-			<div class="col l4"></div><!--Lateral direita-->
-			<div class="col l4">
-				<div class="col l12 cabecalhos hide-on-med-and-down">
+			<div class="col l6">
+				<div class="col l8 offset-l2 cabecalhos hide-on-med-and-down">
 					<h3><b>LUDUS</b></h3>
 				</div>
-				<div class="col s12 l12 caixaPequena">
+				<div class="col s12 l8 offset-l2 caixaPequena">
 					<div class="col s10 offset-s1 l10 offset-l1 caixaPequenaTransparencia z-depth-4">
-						<div class="col s4 offset-s4 l6 offset-l3 titulos">
-							<h6><b>REDEFINIÇÃO DE SENHA:</b></h6>
-						</div>
-						<div class="col s8 offset-s2 l10 offset-l1 descricoes">
-							<p>Digite seu email que enviaremos um link para redefinição da sua senha</p>
+						<div class="col s6 offset-s3 l6 offset-l3 titulos">
+							<h6><b>REGISTRE-SE!</b></h6>
 						</div>
 						<div class="row">
+							<div class="input-field col s8 offset-s2 l10 offset-l1 inputs">
+			          <input id="nome" type="text" class="validate">
+			          <label for="nome">Nome</label>
+			        </div>
 			        <div class="input-field col s8 offset-s2 l10 offset-l1 inputs">
 			          <input id="email" type="email" class="validate">
 			          <label for="email">Email</label>
+			        </div>
+			        <div class="input-field col s8 offset-s2 l10 offset-l1 inputs">
+			          <input id="senha" type="password">
+			          <label for="password">Senha</label>
 			        </div>
 			      </div>
 						<!--<div class="col l10 offset-l1">
 							<label>Email:</label>
 							<input class="inputs" type="email" placeholder="Digite seu email">
 						</div>-->
-						<div class="col s s12 l12">
-							<a class="col s4 offset-s4 l6 offset-l3 waves-effect waves-light btn center-align z-depth-2 botao">Enviar link</a>
+						<div class="col s12 l12">
+							<a id="botao"><button id="botaoRegistrar" class="waves-effect waves-light btn" >Registrar</button></a>
+
+							<!--<a id="registrar" class="col s6 offset-s3 l6 offset-l3 waves-effect waves-light btn center-align z-depth-2 botao">Registrar</a>-->
+						</div>
+						<div class="col s8 offset-s2 l10 offset-l1 titulos">
+							<h6>Entrar com:</h6>
+						</div>
+						<div class="col s12 l12">
+							<div class="col s4 l4">
+								<i id="facebook" class="material-icons medium">facebook</i>
+							</div>
 						</div>
 					</div>
 				</div>
 			</div><!--Conteudo-->
-			<div class="col l4"></div><!--Lateral esquerda-->
+			<div class="col l6"></div><!--Lateral esquerda-->
 		</div>
 
 			
@@ -57,6 +71,7 @@
      	<!--Script ajax Materialize-->
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     	<script src="js/auto.js"></script>
+    	<script src="js/script.js"></script>
   
     </body>
   </html>
