@@ -1,29 +1,25 @@
-//Usando localStorage para armazenar dados da página
+//Scripts sistema LUDUS
 
-localStorage.setItem('usuario', 'layonfigueiroa');
-localStorage.setItem('senha', '12345');
+//Essa função verifica se nome e senha do usuario estão registradas no localStorage
+//Caso sim, o sistema efetua login. Caso não, exibe um alert avisando o erro
 
-var logon, logout;
-
-function efetuarLogin(){
-	var login = document.getElementById("inputLogin").value;
+function efetuarLogin(nome, senha){
+	var nome = document.getElementById("inputLogin").value;
 	var senha = document.getElementById("inputSenha").value;
-	var user = localStorage.getItem("usuario");
+	var user = localStorage.getItem("nome");
 	var pass = localStorage.getItem("senha");
-
-	if(login != '' && senha != ''){
-		if(user === login && pass === senha){
-			logon = window.open('index.html', '_self');
-		}
-		else{
-			alert("Erro ao efetuar login!");
-			logon = window.open('paginaLogin.html', '_self');
-		}
+				
+	if(user === nome && pass === senha){
+		window.open("boasVindas.html", "_self");
 	}
 	else{
-		alert("Digite um login e senha válidos!");
+		alert("Erro ao efetuar login! Nome de usuário e senha não conferem!");
 	}
 }
-var botaoLogin = document.getElementById("botaoEntrar");
-botaoLogin.addEventListener("click", efetuarLogin);
+var botao = document.getElementById("botaoEntrar");
+botao.addEventListener("click", efetuarLogin);
+				
+
+
+
 

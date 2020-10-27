@@ -60,6 +60,9 @@
 						</div>
 					</div>
 				</div>
+				<div class="col s12 l12">
+					<a href="paginaLogin.html" id="voltar" class="col s6 offset-s3 l6 offset-l3 waves-effect waves-light btn center-align z-depth-2 botao">Voltar</a>
+				</div>
 			</div><!--Conteudo-->
 			<div class="col l6"></div><!--Lateral esquerda-->
 		</div>
@@ -71,7 +74,45 @@
      	<!--Script ajax Materialize-->
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     	<script src="js/auto.js"></script>
-    	<script src="js/script.js"></script>
+			<script src="js/script2.js"></script>
+    	<!--<script type="text/javascript">
+				function registrarUsuario(nome, email, senha){
+					var nome = document.getElementById("nome").value;
+					var email = document.getElementById("email").value;
+					var senha = document.getElementById("senha").value;
+					var user = localStorage.getItem("nome");
+					var mail = localStorage.getItem("email");
+					
+					if(nome !== "" && email !== "" && senha !== ""){
+						if(user === nome || mail === email){
+							alert("Usuário já cadastrado na base de dados!");
+						}
+						else{
+							localStorage.setItem("nome", nome);
+							localStorage.setItem("email", email);
+							localStorage.setItem("senha", senha);
+						
+							alert("Usuário registrado com  sucesso!");
+						
+							document.getElementById("nome").value = '';
+							document.getElementById("email").value = '';
+							document.getElementById("senha").value = '';
+						}
+					}
+					else if(nome === ""){
+						alert("Campo nome não pode estar vazio!");
+					}
+					else if(email === ""){
+						alert("Campo email não pode estar vazio!");
+						}
+					else if(senha === ""){
+						alert("Campo senha não pode estar vazio!");
+					}
+				}
+				var botao= document.getElementById("registrar");
+				botao.addEventListener("click", registrarUsuario);
+				
+			</script>-->
   
     </body>
   </html>

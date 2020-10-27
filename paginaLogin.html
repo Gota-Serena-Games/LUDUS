@@ -25,7 +25,7 @@
 												<h6>Senha :</h6>
 												<input type="password" name="" id="inputSenha">
 
-												<a href="boasVindas.html"><button id="botaoEntrar" class="waves-effect waves-light btn" >Entrar</button></a>
+												<button id="botaoEntrar" class="waves-effect waves-light btn" value="Entrar">Entrar</button>
 
 												<h6 class="texto"><a href="redefinicao.html">Esqueci a senha</a></h6>
 
@@ -45,5 +45,22 @@
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 		<script src="js/auto.js"></script>
 		<script src="js/script.js"></script>
+		<!--<script type="text/javascript">
+			function efetuarLogin(nome, senha){
+				var nome = document.getElementById("inputLogin").value;
+				var senha = document.getElementById("inputSenha").value;
+				var user = localStorage.getItem("nome");
+				var pass = localStorage.getItem("senha");
+				
+				if(user === nome && pass === senha){
+					window.open("boasVindas.html", "_self");
+				}
+				else{
+					alert("Erro ao efetuar login! Nome de usuário e senha não conferem!");
+				}
+			}
+			var botao = document.getElementById("botaoEntrar");
+			botao.addEventListener("click", efetuarLogin);
+		</script>-->
 </body>
 </html>
