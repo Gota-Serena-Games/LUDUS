@@ -44,13 +44,17 @@
 				<div id="bloco2" class="col s12 m12 l4 z-depth-4">
 					<div class="col s10 offset-s1 z-depth-4 caixa">
 						<div id="fotoPerfil" class="col s4 offset-s4">
-							<img src="images/foto.png" alt="" class="circle responsive-img center-align">
+							<img id="foto" src="" alt="" class="circle responsive-img center-align">
 						</div><!--Foto de perfil-->
-						<div id="usuario" class="col s6 offset-s3">
-							<h5>Layon1989</h5>
+						<div class="col s12"></div>
+						<div id="icone2" class="col s3">
+							<a id="carregarFoto" href="#"><i class="small material-icons">photo</i></a>
+						</div>
+						<div id="usuario" class="col s6">
+							<h5 id="name"></h5>
 						</div><!--Nome do usuário-->
 						<div id="icone" class="col s3">
-							<a href="#"><i class="small material-icons">person_add</i></a>
+							<a id="adicionar" href="#"><i class="small material-icons">person_add</i></a>
 						</div><!--Icone-->
 						<div class="col s12">
 							<div class="divider"></div><!--Divisória-->
@@ -126,5 +130,23 @@
       <!--Script ajax Materialize-->
 			<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
       <script src="js/auto.js"></script>
+      <script type="text/javascript">
+      	window.addEventListener("load", function(){
+				var nome = localStorage.getItem("nome");
+				var foto = localStorage.getItem("foto");
+				document.getElementById("name").textContent = nome;
+				if(foto){
+					document.getElementById("foto").src = 'images/'+ foto;
+				}
+				else{
+					document.getElementById("foto").src = 'images/avatar.jpg';
+				}
+			});
+
+      	var botao = document.getElementById("carregarFoto");
+			botao.addEventListener("click", function(){
+				window.open("foto.html", "_self");
+			});
+      </script>
     </body>
   </html>

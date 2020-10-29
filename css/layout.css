@@ -46,13 +46,11 @@ label {
 	/*margin-left: 10px;*/
 }
 
-#fotoPerfil img {
-	margin-top: 10px;
+#teste {
+	background-color: blue;
 }
 
-#usuario h5 {
-	text-align: center;
-	color: #2E4057;
+#fotoPerfil img {
 	margin-top: 10px;
 }
 
@@ -60,6 +58,12 @@ label {
 	color: white;
 	margin: 10px;
 }
+
+#icone2 i {
+	color: white;
+	margin: 10px;
+}
+
 #perfisAmigos h6 {
 	text-align: center;
 	color: #2E4057;
@@ -88,6 +92,30 @@ label {
 	margin: 0px;
 }
 
+#nome {
+	color: #2E4057;
+	background-color: white;
+	border-radius: 16px;
+}
+
+#email {
+	color: #2E4057;
+	background-color: white;
+	border-radius: 16px;
+}
+
+#senha {
+	color: #2E4057;
+	background-color: white;
+	border-radius: 16px;
+}
+
+#repeteSenha {
+	color: #2E4057;
+	background-color: white;
+	border-radius: 16px;
+}
+
 .cor {
 	color: #2E4057;
 }
@@ -113,6 +141,20 @@ label {
 	margin-top: 25px;
 }
 
+.caixaPequena2 {
+	background-color: rgb(153, 194, 77);
+	border-radius: 16px;
+	padding-top: 10px;
+	margin-top: 20px;
+	height: 500px;
+}
+
+.caixaPequenaTransparencia2 {
+	background-color: rgba(153, 194, 77, .8);
+	height: 400px;
+	border-radius: 16px;
+	margin-top: 25px;
+}
 .caixa2 {
 	background-color: rgba(153, 194, 77, .8);
 	/*height: 647px;*/height: auto;
@@ -135,6 +177,12 @@ label {
 	color: #2E4057;
 	margin-top: 20px;
 	margin-bottom: 5px;
+}
+
+#usuario h5 {
+	text-align: center;
+	color: #2E4057;
+	margin-top: 10px;
 }
 
 .cabecalhos {

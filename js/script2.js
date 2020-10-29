@@ -21,10 +21,7 @@ function registrarUsuario(nome, email, senha){
 			localStorage.setItem("senha", senha);
 						
 			alert("Usuário registrado com  sucesso!");
-						
-			document.getElementById("nome").value = '';
-			document.getElementById("email").value = '';
-			document.getElementById("senha").value = '';
+			window.open("paginaLogin.html", "_self");
 		}
 	}
 	else if(nome === ""){

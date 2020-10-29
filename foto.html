@@ -26,15 +26,14 @@
 				<div class="col s12 l12 caixaPequena">
 					<div class="col s10 offset-s1 l10 offset-l1 caixaPequenaTransparencia z-depth-4">
 						<div class="col s4 offset-s4 l6 offset-l3 titulos">
-							<h6><b>REDEFINIÇÃO DE SENHA:</b></h6>
+							<h6><b>CARREGAR IMAGEM DE PERFIL:</b></h6>
 						</div>
 						<div class="col s8 offset-s2 l10 offset-l1 descricoes">
-							<p>Digite seu email que enviaremos um link para redefinição da sua senha</p>
+							<p>Escolha um arquivo para sua foto de perfil:</p>
 						</div>
 						<div class="row">
-			        <div class="input-field col s8 offset-s2 l10 offset-l1 inputs">
-			          <input id="email" type="email" class="validate">
-			          <label><span style="color: #2E4057;">Email</span></label>
+			        <div class="input-field col s10 offset-s1 l12 inputs">
+			          <input id="arquivo" type="file" class="validate">
 			        </div>
 			      </div>
 						<!--<div class="col l10 offset-l1">
@@ -42,7 +41,7 @@
 							<input class="inputs" type="email" placeholder="Digite seu email">
 						</div>-->
 						<div class="col s s12 l12">
-							<a id="btn" class="col s4 offset-s4 l6 offset-l3 waves-effect waves-light btn center-align z-depth-2 botao">Enviar link</a>
+							<a id="btn" class="col s4 offset-s4 l6 offset-l3 waves-effect waves-light btn center-align z-depth-2 botao">Carregar</a>
 						</div>
 					</div>
 				</div>
@@ -82,6 +81,34 @@
 				var botao = document.getElementById("btn");
 				botao.addEventListener("click", enviarLink);
 			</script>-->
+			<script type="text/javascript">
+			/*Verifica se existe um arquivo selecionado.
+			Se sim, atribui o nome do arquivo à variável
+			e em seguida modifica o valor do atributo src
+			para o valor da variável. Se não, mantém o valor
+			padrão do atributo src*/
+
+			var foto = '';
+			var botao = document.getElementById("btn");	
+			botao.addEventListener("click", function(){
+				var nome = document.getElementById("arquivo");
+				if(nome){
+					for(var i = 0; i < nome.files.length; i++){
+						var arquivos = nome.files[i];
+						if('name' in arquivos){
+							console.log(arquivos.name);
+							foto = arquivos.name;
+						}
+					}
+					localStorage.setItem("foto", foto);
+					window.open("index.html", "_self");
+				}
+				else{
+					window.open("index.html", "_self");
+				}
+			});
+
+		</script>
   
     </body>
   </html>
