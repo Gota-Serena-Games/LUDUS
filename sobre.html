@@ -44,14 +44,15 @@
 					<div id="blocoPerfil" class="col l12 z-depth-4 hide-on-med-and-down">
 						<div class="col s10 offset-s1 z-depth-4 caixa">
 							<div id="fotoPerfil" class="col s4 offset-s4">
-								<img src="images/foto.png" alt="" class="circle responsive-img center-align">
+								<img id="foto" src="" alt="" class="circle responsive-img center-align">
 							</div><!--Foto de perfil-->
-							<div id="usuario" class="col s6 offset-s3">
-								<h5>Layon1989</h5>
+							<div class="col s12"></div>
+							<div id="icone2" class="col s3">
+								<a id="carregarFoto" href="#"><i class="small material-icons">photo</i></a>
+							</div>
+							<div id="usuario" class="col s6">
+								<h5 id="name"></h5>
 							</div><!--Nome do usuário-->
-							<div id="icone" class="col s3">
-								<a href="#"><i class="small material-icons">person_add</i></a>
-							</div><!--Icone-->
 							<div class="col s12">
 								<div class="divider"></div><!--Divisória-->
 							</div>
@@ -59,50 +60,46 @@
 								<h6 class="cor">Amigos</h6>
 							</div><!--Amigos-->
 							<div id="perfisAmigos" class="row">
+							<div class="col s4">
+								<img id="fotoAmigo1" src="" alt="" class="circle responsive-img center-align">
 								<div class="col s4">
-									<img src="images/mel.jpg" alt="" class="circle responsive-img center-align">
+									<a id="link1" href=""><h6 id="amigo1"></h6></a>
 								</div>
+							</div>
+							<div class="col s4">
+								<img id="fotoAmigo2" src="" alt="" class="circle responsive-img center-align">
 								<div class="col s4">
-									<img src="images/rafa.jpg" alt="" class="circle responsive-img center-align">
+									<a href="#"><h6 id="amigo2"></h6></a>
 								</div>
+							</div>
+							<div class="col s4">
+								<img id="fotoAmigo3" src="" alt="" class="circle responsive-img center-align">
 								<div class="col s4">
-									<img src="images/thay.jpg" alt="" class="circle responsive-img center-align">
+									<a href="#"><h6 id="amigo3"></h6></a>
 								</div>
-								<div>
-									<div class="col s4">
-										<a href="#"><h6>M3L2020</h6></a>
-									</div>
-									<div class="col s4">
-										<a href="#"><h6>Rafa1991</h6></a>
-									</div>
-									<div class="col s4">
-										<a href="#"><h6>Thay20</h6></a>
-									</div>
-								</div><!--Nomes dos amigos linha 1-->
+							</div>
+							<div class="col s4">
+								<img id="fotoAmigo4" src="" alt="" class="circle responsive-img center-align">
 								<div class="col s4">
-									<img src="images/will.jpg" alt="" class="circle responsive-img center-align">
+									<a href="#"><h6 id="amigo4"></h6></a>
 								</div>
+							</div>
+							<div class="col s4">
+								<img id="fotoAmigo5" src="" alt="" class="circle responsive-img center-align">
 								<div class="col s4">
-									<img src="images/mariana.jpg" alt="" class="circle responsive-img center-align">
+									<a href="#"><h6 id="amigo5"></h6></a>
 								</div>
+							</div>
+							<div class="col s4">
+								<img id="fotoAmigo6" src="" alt="" class="circle responsive-img center-align">
 								<div class="col s4">
-									<img src="images/michel.jpg" alt="" class="circle responsive-img center-align">
+									<a href="#"><h6 id="amigo6"></h6></a>
 								</div>
-								<div>
-									<div class="col s4">
-										<a href="#"><h6>will14m</h6></a>
-									</div>
-									<div class="col s4">
-										<a href="#"><h6>limatainer</h6></a>
-									</div>
-									<div class="col s4">
-										<a href="#"><h6>chel123</h6></a>
-									</div>
-								</div><!--Nomes dos amigos linha 2-->
-								<div class="col s12">
-									<a id="btn" class=" col s6 offset-s3 waves-effect waves-light btn center-align">Ver todos os amigos</a>
-								</div><!--Botão-->
-							</div><!--Perfil de amigos-->
+							</div>
+							<div class="col s12">
+								<a id="btn" class=" col s6 offset-s3 waves-effect waves-light btn center-align">Ver todos os amigos</a>
+							</div><!--Botão-->
+						</div><!--Perfil de amigos-->
 							<div class="col s12">
 								<div class="divider"></div><!--Divisória-->
 							</div>
@@ -161,5 +158,43 @@
 			<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
       <script src="js/auto.js"></script>
       <script src="js/script.js"></script>
+      <script type="text/javascript">
+      window.addEventListener("load", function(){
+				var nome = localStorage.getItem("nome");
+				var foto = localStorage.getItem("foto");
+				
+				document.getElementById("name").textContent = nome;
+				if(foto){
+					document.getElementById("foto").src = 'images/'+ foto;
+				}
+				else{
+					document.getElementById("foto").src = 'images/avatar.jpg';
+				}
+			});
+
+      	var botao = document.getElementById("carregarFoto");
+			botao.addEventListener("click", function(){
+				window.open("foto.html", "_self");
+			});
+
+			window.addEventListener("load", function(){
+				var nomeAmigo = localStorage.getItem("amigo");
+				var fotoAmigo = localStorage.getItem("fotoAmigo");
+				document.getElementById("amigo1").textContent = nomeAmigo
+				document.getElementById("fotoAmigo1").src = fotoAmigo;
+			});
+
+			window.addEventListener("load", function(){
+				var nomeAmigo = localStorage.getItem("amigo");
+				var fotoAmigo = localStorage.getItem("fotoAmigo");
+				var linkAmigo = localStorage.getItem("linkAmigo");
+
+				document.getElementById("amigo1").textContent = nomeAmigo
+				document.getElementById("fotoAmigo1").src = fotoAmigo;
+				document.getElementById("link1").href = linkAmigo;
+			});
+
+
+      </script>
     </body>
   </html>

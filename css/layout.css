@@ -96,24 +96,32 @@ label {
 	color: #2E4057;
 	background-color: white;
 	border-radius: 16px;
+	height: 40px;
+	margin-top: 5px;
 }
 
 #email {
 	color: #2E4057;
 	background-color: white;
 	border-radius: 16px;
+	height: 40px;
+	margin-top: 5px;
 }
 
 #senha {
 	color: #2E4057;
 	background-color: white;
 	border-radius: 16px;
+	height: 40px;
+	margin-top: 5px;
 }
 
 #repeteSenha {
 	color: #2E4057;
 	background-color: white;
 	border-radius: 16px;
+	height: 40px;
+	margin-top: 5px;
 }
 
 .cor {
