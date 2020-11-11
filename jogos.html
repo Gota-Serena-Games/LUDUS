@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+  <html lang="pt-br">
+    <head>
+			<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+			<meta charset="utf-8">
+      <!--Import Google Icon Font-->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+			<!--Import Google Fonts-->
+			<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,800&display=swap">
+			<!--Materialize-->
+			<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+			<!--Arquivo CSS-->
+			<link rel="stylesheet" href="css/layout.css">
+			<title>Ludus</title>
+      
+    </head>
+
+    <body>
+			<nav id="top" class="z-depth-4">
+				<div class="nav-wrapper">
+					<a href="index.html" class="brand-logo"><b>LUDUS</b></a>
+					<a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+					<ul class="right hide-on-med-and-down">
+						<li><a href="sobre.html">Sobre</a></li>
+						<li><a href="#">Jogos</a></li>
+						<li><a href="#">Ranking</a></li>
+						<li><a href="#">Configurações</a></li>
+						<li><a href="#"><i class="material-icons">power_settings_new</i></a></li>
+					</ul>
+				</div>
+			</nav>
+				
+			<ul class="sidenav" id="mobile-demo">
+				<li><a href="#"><i class="material-icons">clear</i></a></li>
+				<li><a href="sobre.html"><i class="material-icons">info</i>Sobre</a></li>
+				<li><a href="#"><i class="material-icons">sports_esports</i>Jogos</a></li>
+				<li><a href="#"><i class="material-icons">emoji_events</i>Rankings</a></li>
+				<li><a href="#"><i class="material-icons">settings</i>Configurações</a></li>
+				<li><a href="#"><i class="material-icons">power_settings_new</i>Logout</a></li>
+			</ul>
+			
+			<div class="row">
+				<div class="col m4">
+					<div id="blocoPerfil" class="col l12 z-depth-4 hide-on-med-and-down">
+						<div class="col s10 offset-s1 z-depth-4 caixa">
+							<div id="fotoPerfil" class="col s4 offset-s4">
+								<img id="foto" src="" alt="" class="circle responsive-img center-align">
+							</div><!--Foto de perfil-->
+							<div class="col s12"></div>
+							<div id="icone2" class="col s3">
+								<a id="carregarFoto" href="#"><i class="small material-icons">photo</i></a>
+							</div>
+							<div id="usuario" class="col s6">
+								<h5 id="name"></h5>
+							</div><!--Nome do usuário-->
+							<div class="col s12">
+								<div class="divider"></div><!--Divisória-->
+							</div>
+							<div class="col s12">
+								<h6 class="cor">Amigos</h6>
+							</div><!--Amigos-->
+							<div id="perfisAmigos" class="row">
+							<div class="col s4">
+								<img id="fotoAmigo1" src="" alt="" class="circle responsive-img center-align">
+								<div class="col s4">
+									<a id="link1" href=""><h6 id="amigo1"></h6></a>
+								</div>
+							</div>
+							<div class="col s4">
+								<img id="fotoAmigo2" src="" alt="" class="circle responsive-img center-align">
+								<div class="col s4">
+									<a href="#"><h6 id="amigo2"></h6></a>
+								</div>
+							</div>
+							<div class="col s4">
+								<img id="fotoAmigo3" src="" alt="" class="circle responsive-img center-align">
+								<div class="col s4">
+									<a href="#"><h6 id="amigo3"></h6></a>
+								</div>
+							</div>
+							<div class="col s4">
+								<img id="fotoAmigo4" src="" alt="" class="circle responsive-img center-align">
+								<div class="col s4">
+									<a href="#"><h6 id="amigo4"></h6></a>
+								</div>
+							</div>
+							<div class="col s4">
+								<img id="fotoAmigo5" src="" alt="" class="circle responsive-img center-align">
+								<div class="col s4">
+									<a href="#"><h6 id="amigo5"></h6></a>
+								</div>
+							</div>
+							<div class="col s4">
+								<img id="fotoAmigo6" src="" alt="" class="circle responsive-img center-align">
+								<div class="col s4">
+									<a href="#"><h6 id="amigo6"></h6></a>
+								</div>
+							</div>
+							<div class="col s12">
+								<a id="btn" class=" col s6 offset-s3 waves-effect waves-light btn center-align">Ver todos os amigos</a>
+							</div><!--Botão-->
+						</div><!--Perfil de amigos-->
+							<div class="col s12">
+								<div class="divider"></div><!--Divisória-->
+							</div>
+							<div class="col s12">
+								<h6 class="cor">Conquistas</h6>
+							</div><!--Conquistas-->
+						</div><!--Bloco do perfil-->
+					</div>
+				</div>
+				<div id="conteudo" class="col s12 m8">
+					<div id="blocoPerfil2" class="col s12 m12 l12 z-depth-4">
+						<div class="col s12 titulos">
+							<h5>JOGOS</h5>
+						</div>
+						<!--Caixa dos jogos-->
+						<div class="col s10 offset-s1 z-depth-4 caixa2">
+							<div class="row">
+								<div class="col s6">
+									<div class="card">
+    								<div class="card-image waves-effect waves-block waves-light">
+      								<img class="activator" src="images/Empty.png" style="border: black solid 1px; width: 315px; margin: 9px">
+    								</div>
+    								<div class="card-content">
+      								<span class="card-title activator grey-text text-darken-4">Operação Rio Limpo<i class="material-icons right">more_vert</i></span>
+      								<button><a href="#">Jogar</a></button>
+    								</div>
+    								<div class="card-reveal">
+      								<span class="card-title grey-text text-darken-4">Operação Rio Limpo<i class="material-icons right">close</i></span>
+      								<p>Ajude o seu Zé a limpar o rio Capibaribe.</p>
+    								</div>
+  								</div>
+								</div>
+								<div class="col s6">
+									<div class="card">
+    								<div class="card-image waves-effect waves-block waves-light">
+      								<img class="activator" src="images/Empty.png" style="border: black solid 1px; width: 315px; margin: 9px">
+    								</div>
+    								<div class="card-content">
+      								<span class="card-title activator grey-text text-darken-4">Reciclagem<i class="material-icons right">more_vert</i></span>
+      								<button><a href="#">Jogar</a></button>
+    								</div>
+    								<div class="card-reveal">
+      								<span class="card-title grey-text text-darken-4">Reciclagem<i class="material-icons right">close</i></span>
+      								<p>Vamos separar o lixo por seus tipos, colocando-os nas lixeiras adequadas?</p>
+    								</div>
+  								</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col s6">
+									<div class="card">
+    								<div class="card-image waves-effect waves-block waves-light">
+      								<img class="activator" src="images/Empty.png" style="border: black solid 1px; width: 315px; margin: 9px">
+    								</div>
+    								<div class="card-content">
+      								<span class="card-title activator grey-text text-darken-4">Mata Mosquito<i class="material-icons right">more_vert</i></span>
+      								<button><a href="#">Jogar</a></button>
+    								</div>
+    								<div class="card-reveal">
+      								<span class="card-title grey-text text-darken-4">Mata Mosquito<i class="material-icons right">close</i></span>
+      								<p>Enxames de mosquitos estão aparecendo. Acabe com todos eles e evite doenças</p>
+    								</div>
+  								</div>
+								</div>
+								<div class="col s6">
+									<div class="card">
+    								<div class="card-image waves-effect waves-block waves-light">
+      								<img class="activator" src="images/Empty.png" style="border: black solid 1px; width: 315px; margin: 9px">
+    								</div>
+    								<div class="card-content">
+      								<span class="card-title activator grey-text text-darken-4">Jorginaldo<i class="material-icons right">more_vert</i></span>
+      								<button><a href="#">Jogar</a></button>
+    								</div>
+    								<div class="card-reveal">
+      								<span class="card-title grey-text text-darken-4">Jorginaldo<i class="material-icons right">close</i></span>
+      								<p>Jorginaldo está derrubando árvores a torto e a direito. Vamos impedí-lo</p>
+    								</div>
+  								</div>
+								</div>
+							</div>
+						</div>
+						<!--/Caixa dos jogos-->
+					</div><!--Lateral direita da página-->
+				</div>
+			</div>
+				<div class="row">
+					<div class="col s10 m10 l11"></div>
+					<div id="chat" class="col s1 m1 l1">
+						<i class="medium material-icons">forum</i>
+					</div>
+				</div>
+			
+			<!--jquery-->
+			<script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" 
+			crossorigin="anonymous"></script>
+      <!--Script ajax Materialize-->
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+      <script src="js/auto.js"></script>
+      <script src="js/script.js"></script>
+      <script type="text/javascript">
+      window.addEventListener("load", function(){
+				var nome = localStorage.getItem("nome");
+				var foto = localStorage.getItem("foto");
+				
+				document.getElementById("name").textContent = nome;
+				if(foto){
+					document.getElementById("foto").src = 'images/'+ foto;
+				}
+				else{
+					document.getElementById("foto").src = 'images/avatar.jpg';
+				}
+			});
+
+      	var botao = document.getElementById("carregarFoto");
+			botao.addEventListener("click", function(){
+				window.open("foto.html", "_self");
+			});
+
+			window.addEventListener("load", function(){
+				var nomeAmigo = localStorage.getItem("amigo");
+				var fotoAmigo = localStorage.getItem("fotoAmigo");
+				document.getElementById("amigo1").textContent = nomeAmigo
+				document.getElementById("fotoAmigo1").src = fotoAmigo;
+			});
+
+			window.addEventListener("load", function(){
+				var nomeAmigo = localStorage.getItem("amigo");
+				var fotoAmigo = localStorage.getItem("fotoAmigo");
+				var linkAmigo = localStorage.getItem("linkAmigo");
+
+				document.getElementById("amigo1").textContent = nomeAmigo
+				document.getElementById("fotoAmigo1").src = fotoAmigo;
+				document.getElementById("link1").href = linkAmigo;
+			});
+
+
+      </script>
+    </body>
+  </html>

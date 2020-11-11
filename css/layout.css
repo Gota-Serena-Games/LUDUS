@@ -124,6 +124,33 @@ label {
 	margin-top: 5px;
 }
 
+#pesquisarAmigos {
+	color: #2E4057;
+	background-color: white;
+	border-radius: 16px;
+	height: 40px;
+	margin-top: 5px;
+}
+
+#usuario h5 {
+	text-align: center;
+	color: #2E4057;
+	margin-top: 10px;
+}
+
+.avatares {
+	width: 120px;
+	border-radius: 50%;
+	margin-top: 15px;
+}
+
+.nomeAmigos{
+	margin-top: 55px;
+	font-family: "Roboto";
+	text-align: left;
+	color: #2E4057;
+}
+
 .cor {
 	color: #2E4057;
 }
@@ -173,6 +200,13 @@ label {
 	padding-bottom: 20px;
 }
 
+.caixasAmigos {
+	background-color: rgba(153, 194, 77, .8);
+	height: 150px;
+	border-radius: 16px;
+	margin: 0px 10px;
+}
+
 .titulos {
 	text-align: center;
 	color: #2E4057;
@@ -185,12 +219,6 @@ label {
 	color: #2E4057;
 	margin-top: 20px;
 	margin-bottom: 5px;
-}
-
-#usuario h5 {
-	text-align: center;
-	color: #2E4057;
-	margin-top: 10px;
 }
 
 .cabecalhos {
