@@ -26,15 +26,19 @@
 				<div class="col s12 l12 caixaPequena">
 					<div class="col s10 offset-s1 l10 offset-l1 caixaPequenaTransparencia z-depth-4">
 						<div class="col s4 offset-s4 l6 offset-l3 titulos">
-							<h6><b>REDEFINIÇÃO DE SENHA:</b></h6>
+							<h6><b>REDEFINA SUA SENHA:</b></h6>
 						</div>
 						<div class="col s8 offset-s2 l10 offset-l1 descricoes">
-							<p>Digite seu email que enviaremos um link para redefinição da sua senha</p>
+							<p>Digite uma nova senha:</p>
 						</div>
 						<div class="row">
 			        <div class="input-field col s8 offset-s2 l10 offset-l1 inputs">
-			          <input id="email" type="email" class="validate">
-			          <label><span style="color: #2E4057;">Email</span></label>
+			          <input id="senha" type="password" class="validate">
+			          <label><span style="color: #2E4057;">Nova senha</span></label>
+			        </div>
+							<div class="input-field col s8 offset-s2 l10 offset-l1 inputs">
+			          <input id="repeteSenha" type="password" class="validate">
+			          <label><span style="color: #2E4057;">Repita a senha</span></label>
 			        </div>
 			      </div>
 						<!--<div class="col l10 offset-l1">
@@ -42,14 +46,11 @@
 							<input class="inputs" type="email" placeholder="Digite seu email">
 						</div>-->
 						<div class="col s s12 l12">
-							<a id="btn" class="col s4 offset-s4 l6 offset-l3 waves-effect waves-light btn center-align z-depth-2 botao">Enviar link</a>
+							<a id="botao" class="col s4 offset-s4 l6 offset-l3 waves-effect waves-light btn center-align z-depth-2 botao">Confirmar</a>
 						</div>
 					</div>
 				</div>
 			</div><!--Conteudo-->
-			<div class="col s12 l12">
-				<a href="paginaLogin.html" id="voltar" class="col s2 offset-s5 l2 offset-l5 waves-effect waves-light btn center-align z-depth-2 botao">Voltar</a>
-			</div>
 			<div class="col l4"></div><!--Lateral esquerda-->
 		</div>
 
@@ -60,27 +61,31 @@
      	<!--Script ajax Materialize-->
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     	<script src="js/auto.js"></script>
-			<script src="js/script4.js"></script>
+			<script src="js/script3.js"></script>
 			<!--<script type="text/javascript">
-				function enviarLink(email){
-					var email = document.getElementById("email").value;
-					var mail = localStorage.getItem("email");
+				function alterarSenha(senha, repeteSenha){
+					var senha = document.getElementById("senha").value;
+					var repeteSenha = document.getElementById("repeteSenha").value;
+					var novaSenha = '';
 					
-					if(email !== ''){
-						if(email === mail){
-							window.open("redefinicao2.html", "_self");
+					if(senha !== '' && repeteSenha !== ''){
+						if(senha === repeteSenha){
+							novaSenha = localStorage.setItem("senha", senha);
+							alert("Senha alterada com sucesso!");
+							window.open("paginaLogin.html", "_self");
 						}
 						else{
-							alert("O email digitado não se encontra na base de dados!");
-							document.getElementById("email").value = '';
+							alert("As senhas não conferem!");
+							document.getElementById("senha").value = '';
+							document.getElementById("repeteSenha").value = '';
 						}
 					}
 					else{
-						alert("É necessário um email válido para envio do link de redefinição!");
+						alert("Todos os campos precisam estar preenchidos!");
 					}
 				}
-				var botao = document.getElementById("btn");
-				botao.addEventListener("click", enviarLink);
+				var botao = document.getElementById("botao");
+				botao.addEventListener("click", alterarSenha);
 			</script>-->
   
     </body>

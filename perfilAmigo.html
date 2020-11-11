@@ -44,15 +44,16 @@
 				<div id="bloco2" class="col s12 m12 l4 z-depth-4">
 					<div class="col s10 offset-s1 z-depth-4 caixa">
 						<div id="fotoPerfil" class="col s4 offset-s4">
-							<img id="foto" src="" alt="" class="circle responsive-img center-align">
+							<img  id="fotoAmigo" src="images/mariana.jpg" alt="" class="circle responsive-img center-align">
 						</div><!--Foto de perfil-->
 						<div class="col s12"></div>
-						<div id="icone2" class="col s3">
-							<a id="carregarFoto" href="#"><i class="small material-icons">photo</i></a>
-						</div>
+						<div id="icone2" class="col s3"></div>
 						<div id="usuario" class="col s6">
-							<h5 id="name"></h5>
+							<h5 id="nameAmigo">limatainer</h5>
 						</div><!--Nome do usuário-->
+						<div id="icone" class="col s3">
+							<a id="adicionar" href="#"><i id="icon" class="small material-icons">person_add</i></a>
+						</div><!--Icone-->
 						<div class="col s12">
 							<div class="divider"></div><!--Divisória-->
 						</div>
@@ -61,39 +62,39 @@
 						</div><!--Amigos-->
 						<div id="perfisAmigos" class="row">
 							<div class="col s4">
-								<img id="fotoAmigo1" src="" alt="" class="circle responsive-img center-align">
-								<div class="col s4">
-									<a id="link1" href=""><h6 id="amigo1"></h6></a>
+								<img src="images/mel.jpg" alt="" class="circle responsive-img center-align">
+								<div class="col s12">
+									<a href="#"><h6>melassis</h6></a>
 								</div>
 							</div>
 							<div class="col s4">
-								<img id="fotoAmigo2" src="" alt="" class="circle responsive-img center-align">
-								<div class="col s4">
-									<a href="#"><h6 id="amigo2"></h6></a>
+								<img src="images/rafa.jpg" alt="" class="circle responsive-img center-align">
+								<div class="col s12">
+									<a href="#"><h6>carlosrafa</h6></a>
 								</div>
 							</div>
 							<div class="col s4">
-								<img id="fotoAmigo3" src="" alt="" class="circle responsive-img center-align">
-								<div class="col s4">
-									<a href="#"><h6 id="amigo3"></h6></a>
+								<img src="images/thay.jpg" alt="" class="circle responsive-img center-align">
+								<div class="col s12">
+									<a href="#"><h6>thay2020</h6></a>
 								</div>
 							</div>
 							<div class="col s4">
-								<img id="fotoAmigo4" src="" alt="" class="circle responsive-img center-align">
-								<div class="col s4">
-									<a href="#"><h6 id="amigo4"></h6></a>
+								<img src="images/will.jpg" alt="" class="circle responsive-img center-align">
+								<div class="col s12">
+									<a href="#"><h6>willledo</h6></a>
 								</div>
 							</div>
 							<div class="col s4">
-								<img id="fotoAmigo5" src="" alt="" class="circle responsive-img center-align">
-								<div class="col s4">
-									<a href="#"><h6 id="amigo5"></h6></a>
+								<img src="images/michel.jpg" alt="" class="circle responsive-img center-align">
+								<div class="col s12">
+									<a href="#"><h6>mi_chel</h6></a>
 								</div>
 							</div>
 							<div class="col s4">
-								<img id="fotoAmigo6" src="" alt="" class="circle responsive-img center-align">
-								<div class="col s4">
-									<a href="#"><h6 id="amigo6"></h6></a>
+								<img src="" alt="" class="circle responsive-img center-align">
+								<div class="col s12">
+									<a href="#"><h6></h6></a>
 								</div>
 							</div>
 							<div class="col s12">
@@ -124,35 +125,39 @@
 			<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
       <script src="js/auto.js"></script>
       <script type="text/javascript">
-      window.addEventListener("load", function(){
-				var nome = localStorage.getItem("nome");
-				var foto = localStorage.getItem("foto");
-				
-				document.getElementById("name").textContent = nome;
-				if(foto){
-					document.getElementById("foto").src = 'images/'+ foto;
-				}
-				else{
-					document.getElementById("foto").src = 'images/avatar.jpg';
-				}
-			});
+      	var adicionar = document.getElementById("adicionar");
+      	var nomeAmigo = document.getElementById("nameAmigo").textContent;
+      	var fotoAmigo = document.getElementById("fotoAmigo").src;
+      	var ativado = true;
+      	var link = 'perfilAmigo.html';
+      	var icon = document.getElementById("icon").textContent;
 
-      	var botao = document.getElementById("carregarFoto");
-			botao.addEventListener("click", function(){
-				window.open("foto.html", "_self");
-			});
+      	adicionar.addEventListener("click", function(){
+      		document.getElementById("icon").textContent = 'person_remove';
+      		localStorage.setItem("amigo", nomeAmigo);
+      		localStorage.setItem("fotoAmigo", fotoAmigo);
+      		localStorage.setItem("linkAmigo", link);
+      		
+      		if(ativado){
+      			ativado = false;
+      			document.getElementById('icon').textContent = 'person_remove';
+      			localStorage.setItem("adicionado", "person_remove");
+      		}
+      		else{
+	     		ativado = true;
+	      		document.getElementById('icon').textContent = 'person_add';
+	      		localStorage.setItem("adicionado", "person_add");
+	      		localStorage.removeItem("fotoAmigo");
+	      		localStorage.removeItem("amigo");
+	      		localStorage.removeItem("linkAmigo");
+	      	}
+      	});
 
-			window.addEventListener("load", function(){
-				var nomeAmigo = localStorage.getItem("amigo");
-				var fotoAmigo = localStorage.getItem("fotoAmigo");
-				var linkAmigo = localStorage.getItem("linkAmigo");
+      	window.addEventListener("load", function(){
+      		var situacao = localStorage.getItem("adicionado");
+      		document.getElementById("icon").textContent = situacao;
 
-				document.getElementById("amigo1").textContent = nomeAmigo
-				document.getElementById("fotoAmigo1").src = fotoAmigo;
-				document.getElementById("link1").href = linkAmigo;
-			});
-
-
+      	})
       </script>
     </body>
   </html>
