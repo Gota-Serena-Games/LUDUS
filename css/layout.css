@@ -33,7 +33,7 @@ label {
 	border-bottom-left-radius: 16px;
 	border-bottom-right-radius: 16px;
 	padding-top: 20px;
-	/*margin-left: 10px;*/
+	margin-left: 10px;
 }
 
 #blocoPerfil2 {
@@ -210,7 +210,7 @@ label {
 .titulos {
 	text-align: center;
 	color: #2E4057;
-	margin-top: 30px;
+	margin-top: 5px;
 	margin-bottom: 30px;
 }
 
@@ -273,6 +273,54 @@ label {
 animation: fadeIn 3s ease-in-out;
 }
 
+@media only screen and (min-width:601px) and (max-width: 992px){
+
+	#conteudo {
+		width: 80%;
+		margin-left: 10%;
+	}
+	#botaoJogar {
+		margin-left: 43%;
+		margin-bottom: 4%;
+	}
+
+}
+
+@media only screen and (min-width:993px){
+
+	#conteudo {
+		width: 55%;
+		margin-left: 5%;
+	}
+
+	#blocoPerfil {
+		background-color: rgb(153, 194, 77);
+		height: 800px;
+		border-bottom-left-radius: 16px;
+		border-bottom-right-radius: 16px;
+		padding-top: 20px;
+		margin-left: 55px;
+	}
+	
+	#blocoPerfil2 {
+		background-color: rgb(153, 194, 77);
+		height: auto;
+		border-bottom-left-radius: 16px;
+		border-bottom-right-radius: 16px;
+		padding-top: 20px;
+		padding-bottom: 85px; 
+		margin-left: 20px;
+		/*margin-left: 10px;*/
+	}
+
+	#botaoJogar {
+		margin-left: 44%;
+		margin-bottom: 4%;
+	}
+
+}
+
+
 @-webkit-keyframes fadeIn {
 0% { opacity: 0; }
 100% { opacity: 1; } 
@@ -291,8 +339,7 @@ animation: fadeIn 3s ease-in-out;
 }
 
 #botaoJogar {
-	padding: 2%;
-	margin-left: 45%;
+	margin-left: 42%;
 	margin-bottom: 4%;
 }
 .imagemDoJogo {
