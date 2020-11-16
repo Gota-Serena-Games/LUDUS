@@ -273,6 +273,27 @@ label {
 animation: fadeIn 3s ease-in-out;
 }
 
+.logoFadeIn{
+	text-align: center;
+}
+
+@-webkit-keyframes fadeIn {
+0% { opacity: 0; }
+100% { opacity: 1; } 
+}
+@-moz-keyframes fadeIn {
+0% { opacity: 0;}
+100% { opacity: 1; }
+}
+@-o-keyframes fadeIn {
+0% { opacity: 0; }
+100% { opacity: 1; }
+}
+@keyframes fadeIn {
+0% { opacity: 0; }
+100% { opacity: 1; }
+}
+
 @media only screen and (min-width:601px) and (max-width: 992px){
 
 	#conteudo {
@@ -320,24 +341,6 @@ animation: fadeIn 3s ease-in-out;
 
 }
 
-
-@-webkit-keyframes fadeIn {
-0% { opacity: 0; }
-100% { opacity: 1; } 
-}
-@-moz-keyframes fadeIn {
-0% { opacity: 0;}
-100% { opacity: 1; }
-}
-@-o-keyframes fadeIn {
-0% { opacity: 0; }
-100% { opacity: 1; }
-}
-@keyframes fadeIn {
-0% { opacity: 0; }
-100% { opacity: 1; }
-}
-
 #botaoJogar {
 	margin-left: 42%;
 	margin-bottom: 4%;
@@ -349,4 +352,27 @@ animation: fadeIn 3s ease-in-out;
 
 .sobreOJogo {
 	padding-top: 5px;
+}
+
+.desconectar {
+	columns: blue;
+}
+
+
+@media only screen and (max-width:993px){
+	#bloco1{
+
+		padding-left: 17%;
+	
+	}
+	
+}
+
+.opcoesConfig {
+	margin-top: 20px;
+	
+}
+
+.caixasAmigos {
+	padding-left: 50px;
 }
