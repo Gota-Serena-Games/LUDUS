@@ -37,11 +37,11 @@ label {
 
 #blocoPerfil2 {
 	background-color: rgb(153, 194, 77);
-	height: auto;
+	height: 800px;
 	border-bottom-left-radius: 16px;
 	border-bottom-right-radius: 16px;
 	padding-top: 20px;
-	padding-bottom: 85px; 
+	padding-bottom: 85px 
 	/*margin-left: 10px;*/
 }
 
@@ -196,8 +196,9 @@ label {
 }
 .caixa2 {
 	background-color: rgba(153, 194, 77, .8);
-	/*height: 647px;*/height: auto;
+	/*height: 647px;*/height: 652px;
 	border-radius: 16px;
+	overflow: auto;
 }
 .caixa2 p {
 	padding: 15px;
@@ -270,6 +271,13 @@ label {
 	margin-top: 250px;
 }
 
+.cardJogo img {
+	border: black solid 1px; 
+	width: 315px; 
+	margin: 15px
+	
+}
+
 .fadeIn {
 -webkit-animation: fadeIn 3s ease-in-out;
 -moz-animation: fadeIn 3s ease-in-out;
@@ -330,7 +338,7 @@ animation: fadeIn 3s ease-in-out;
 	
 	#blocoPerfil2 {
 		background-color: rgb(153, 194, 77);
-		height: auto;
+		height: 800px;
 		border-bottom-left-radius: 16px;
 		border-bottom-right-radius: 16px;
 		padding-top: 20px;
@@ -381,3 +389,23 @@ animation: fadeIn 3s ease-in-out;
 .caixasAmigos {
 	padding-left: 50px;
 }
+
+@media only screen and (max-width: 600px) {
+	body {
+		margin-bottom: 0px;
+	}
+	#bloco2 {
+		border-bottom-left-radius: 0px;
+		border-bottom-right-radius: 0px;
+		margin-bottom: -22px;
+	}
+	#blocoPerfil2 {
+		border-bottom-left-radius: 0px;
+		border-bottom-right-radius: 0px;
+		height: 820px;
+	}
+	#conteudo {
+		padding-left: 0px;
+		padding-right: 0px;
+	}
+} 
