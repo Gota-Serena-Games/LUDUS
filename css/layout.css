@@ -86,6 +86,11 @@ label {
 	height: 800px;
 }
 
+#conteudo {
+	height: 800px;
+	/*overflow: auto;*/
+}
+
 #facebook {
 	color: white;
 	margin: 0px;
@@ -127,8 +132,9 @@ label {
 	color: #2E4057;
 	background-color: white;
 	border-radius: 16px;
-	height: 40px;
+	height: 35px;
 	margin-top: 5px;
+	/*width: 250px;*/
 }
 
 #usuario h5 {
@@ -140,6 +146,12 @@ label {
 #mensagemModal {
 	color: #2E4057;
 	text-align: center;
+}
+
+#container {
+	/*background: blue;*/
+	height: 580px;
+	overflow: auto;
 }
 
 .avatares {
@@ -157,6 +169,11 @@ label {
 
 .cor {
 	color: #2E4057;
+}
+
+.linha {
+	margin: 0px;
+	padding: 0px;
 }
 
 .caixa {
@@ -200,6 +217,21 @@ label {
 	border-radius: 16px;
 	overflow: auto;
 }
+
+.caixa3 {
+	background-color: rgba(153, 194, 77, .8);
+	/*height: 647px;*/height: 588px;
+	border-radius: 16px;
+	overflow: auto;
+}
+
+.caixa4 {
+	background-color: rgba(153, 194, 77, .8);
+	/*height: 647px;*/height: 598px;
+	border-radius: 16px;
+	overflow: auto;
+}
+
 .caixa2 p {
 	padding: 15px;
 	padding-bottom: 20px;
@@ -209,7 +241,7 @@ label {
 	background-color: rgba(153, 194, 77, .8);
 	height: 150px;
 	border-radius: 16px;
-	margin: 0px 10px;
+	margin: 5px 10px;
 }
 
 .titulos {
@@ -221,6 +253,14 @@ label {
 
 .titulos2 {
 	text-align: center;
+	color: #2E4057;
+	margin-top: 20px;
+	margin-bottom: 5px;
+}
+
+.subtitulos {
+	text-align: center;
+	font-size: 20px
 	color: #2E4057;
 	margin-top: 20px;
 	margin-bottom: 5px;
@@ -271,11 +311,16 @@ label {
 	margin-top: 250px;
 }
 
-.cardJogo img {
+.cards {
 	border: black solid 1px; 
 	width: 315px; 
-	margin: 15px
-	
+	margin: 15px;
+}
+
+.tabelas {
+	margin-top: 30px;
+	color: #2E4057;
+	font-family: "Roboto";
 }
 
 .fadeIn {
@@ -361,16 +406,24 @@ animation: fadeIn 3s ease-in-out;
 .imagemDoJogo {
 	padding: 3%;
 	padding-top: 5%;
+	border: 2px solid #2E4057;
+}
+
+.tamanhoImagem {
+	width: 254px;
+	height: 162px;
 }
 
 .sobreOJogo {
 	padding-top: 5px;
+	margin: 20px;
+	color: #2E4057;
+	text-align: justify;
 }
 
 .desconectar {
 	columns: blue;
 }
-
 
 @media only screen and (max-width:993px){
 	/*#bloco1{
@@ -383,13 +436,25 @@ animation: fadeIn 3s ease-in-out;
 
 .opcoesConfig {
 	margin-top: 20px;
-	
+	color: #2E4057;
+	height: 180px;
+	/*text-align: left;*/
+}
+
+.opcoesConfig h6 {
+	text-align: center;
 }
 
 .caixasAmigos {
 	padding-left: 50px;
+	height: 150px;
 }
 
+.caixaConfig {
+	padding-left: 50px;
+	height: 400px;
+	border-radius: 16px;
+}
 @media only screen and (max-width: 600px) {
 	body {
 		margin-bottom: 0px;

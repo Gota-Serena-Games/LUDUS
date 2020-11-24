@@ -55,7 +55,7 @@
 				<li><a href="#"><i class="material-icons">power_settings_new</i>Logout</a></li>
 			</ul>
 			
-			<div class="row">
+			<div class="row" >
 				<div class="col m4">
 					<div id="blocoPerfil" class="col l12 z-depth-4 hide-on-med-and-down">
 						<div class="col s10 offset-s1 z-depth-4 caixa">
@@ -128,26 +128,25 @@
 				<div id="conteudo" class="col s12 m8">
 					<div id="blocoPerfil2" class="col s12 m12 l12 z-depth-4">
 						<div class="col s12 titulos">
-							<h5 class="titulos2">RANKING</h5>
-							<h4 class="subtitulos">Rio Limpo</h4>
+              <h5 class="titulos2">JOGOS</h5>
+              <h4 class="subtitulos">Reciclagem</h4>
 						</div>
-						<div class="col s10 offset-s1 z-depth-4 caixa4">
+						<!--Caixa dos jogos-->
+						<div class="col s10 offset-s1 z-depth-4 caixa3">
 							<div class="row">
-								<div class="col s12">
-									<table class="hightlight centered tabelas">
-        						<thead>
-						          <tr>
-						            <th>Posição</th>
-						            <th>Nome</th>
-						            <th>Pontuação</th>
-						          </tr>
-						        </thead>
+								<div class="col s12 m12 l12">
+                  <img class="imagemDoJogo" src="images/Reciclagem-1.jpg" alt="" width="100%">
+                  <button id="botaoJogar" class="waves-effect waves-ligth btn center-align" type="button" onclick="novoJogo()">Jogar</button>
+                </div>
 
-						        <tbody></tbody>
-						      </table>
-						    </div>
-						  </div>
-						</div>
+                <div>                  
+                	<p class="sobreOJogo">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus eu libero eu leo sodales tincidunt. Morbi id placerat ex. Duis pellentesque ipsum a justo dapibus, et posuere ante blandit. Donec turpis sapien, hendrerit ut accumsan et, lacinia id odio. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Curabitur finibus pulvinar elit, ut tempus diam dapibus sit amet. Aliquam fringilla dapibus rhoncus.
+
+                	Donec ac sodales tortor, eget molestie turcitur molestie risus. Ut sed urna nulla. Integer id nunc quis leo sodales auctor ut ac purus. Nunc at eros id ipsum tincidunt mollis eu ut elit. Proin volutpat lorem quis risus venenatis facilisis. Morbi vel mollis sem. Sed porta tellus id magna euismod, eu pulvinar libero ultricies.</p>
+                </div>
+
+							</div>
+            </div><!--/Caixa dos jogos-->
 					</div><!--Lateral direita da página-->
 				</div>
 			</div>
@@ -166,6 +165,7 @@
       <script src="js/auto.js"></script>
       <script src="js/script.js"></script>
       <script type="text/javascript">
+        
       window.addEventListener("load", function(){
 				var nome = localStorage.getItem("nome");
 				var foto = localStorage.getItem("foto");
@@ -201,6 +201,18 @@
 				document.getElementById("link1").href = linkAmigo;
 			});
 
+			var myWindow;
+
+				function novoJogo(){
+					myWindow = window.open("", "", "width=400, height=200");
+					setTimeout(max, 3000);
+				}
+
+				function max(){
+					myWindow.resizeTo(1600, 1200);
+					myWindow.focus();
+					myWindow.location.href = "jogo.html";
+				}
 
       </script>
     </body>

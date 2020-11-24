@@ -25,14 +25,20 @@
 						<li><a href="jogos.html">Jogos</a></li>
 						<li><a href="ranking.html">Ranking</a></li>
 						<li><a href="configuracoes.html">Configurações</a></li>
-						<li><a href="#modal1" id="logout" class="waves-effect waves-light btn modal-trigger"><i class="material-icons">power_settings_new</i></a></li>
+						<li><a href="#modal1" id="logout" class="waves-effect waves-light modal-trigger"><i class="material-icons">power_settings_new</i></a></li>
 
 						<!-- Modal Structure -->
 						<div id="modal1" class="modal">
 							<div class="modal-content">
-								<h5>Você tem certeza que deseja desconectar?</h5>
-								<a href="paginaLogin.html" class="btn-small waves-effect waves-light btn logout">Sim</a>
-								<a href="" class="btn-small waves-effect waves-light btn orange">Não</a>
+								<h5 id="mensagemModal">Você tem certeza que deseja desconectar?</h5>
+								<div class="row">
+									<div class="col s3 offset-s3">
+										<a href="paginaLogin.html" class="btn-small waves-effect waves-light btn logout botaoModal">Sim</a>
+									</div>
+									<div class="col s6">
+										<a href="" class="btn-small waves-effect waves-light btn orange">Não</a>
+									</div>
+								</div>
 							</div>
 						</div>
 					</ul>
@@ -40,9 +46,10 @@
 			</nav>
 				
 			<ul class="sidenav" id="mobile-demo">
-				<li><a href="#"><i class="material-icons">clear</i></a></li>
+				<!--<li><a href="#"><i class="material-icons">clear</i></a></li>-->
+				<br><br><br>
 				<li><a href="sobre.html"><i class="material-icons">info</i>Sobre</a></li>
-				<li><a href="jogos2.html"><i class="material-icons">sports_esports</i>Jogos</a></li>
+				<li><a href="jogos.html"><i class="material-icons">sports_esports</i>Jogos</a></li>
 				<li><a href="ranking.html"><i class="material-icons">emoji_events</i>Rankings</a></li>
 				<li><a href="configuracoes.html"><i class="material-icons">settings</i>Configurações</a></li>
 				<li><a href="#"><i class="material-icons">power_settings_new</i>Logout</a></li>
@@ -121,90 +128,90 @@
 				<div id="conteudo" class="col s12 m8">
 					<div id="blocoPerfil2" class="col s12 m12 l12 z-depth-4">
 						<div class="col s12 titulos">
-							<h5>AMIGOS</h5>
+							<h5 class="titulos2">AMIGOS</h5>
 						</div>
 						<div class="row">
-							<div class="col s12">
-								<div class="col s4"></div>
-								<div class="col s4">
+							<!--<div class="col s12">-->
+								<div class="col s2"></div>
+								<div class="col s8">
 									<input type="text" id="pesquisarAmigos" placeholder="Pesquisar Amigos">
 								</div>
-								<div class="col s4"></div>
-							</div>
+								<div class="col s2"></div>
+							<!--</div>-->
 						</div>
 						<!--Caixas com amigos-->
-						<div class="row">
-							<div class="col s1"></div>
-							<div class="col s5 z-depth-4 caixasAmigos">
-								<div class="col s6">
-									<img class="avatares" src="images/avatar.jpg">
-								</div>
-								<div class="col s6 nomeAmigos">
-									<h6>Nome do usuário</h6>
-								</div>
+						<div id="container" class="col s12">
+							<div class="row linha">
+								<div class="col s0 m1"></div>
+								<div class="col s12 m5 z-depth-1 caixasAmigos">
+									<div class="col s6">
+										<img class="avatares" src="images/avatar.jpg">
+									</div>
+									<div class="col s6 nomeAmigos">
+										<h6>Nome do usuário</h6>
+									</div>
+								</div><!--Primeira linha de amigos-->
+								<div class="col s12 m5 z-depth-1 caixasAmigos">
+									<div class="col s6">
+										<img class="avatares" src="images/avatar.jpg">
+									</div>
+									<div class="col s6 nomeAmigos">
+										<h6>Nome do usuário</h6>
+									</div>
+								</div><!--Primeira linha de amigos-->
 							</div>
-							<div class="col s5 z-depth-4 caixasAmigos">
-								<div class="col s6">
-									<img class="avatares" src="images/avatar.jpg">
-								</div>
-								<div class="col s6 nomeAmigos">
-									<h6>Nome do usuário</h6>
-								</div>
-							</div>
-							<div class="col s1"></div>
-						</div>
 
-						<div class="row">
-							<div class="col s1"></div>
-							<div class="col s5 z-depth-4 caixasAmigos">
-								<div class="col s6">
-									<img class="avatares" src="images/avatar.jpg">
-								</div>
-								<div class="col s6 nomeAmigos">
-									<h6>Nome do usuário</h6>
-								</div>
-							</div>
-							<div class="col s5 z-depth-4 caixasAmigos">
-								<div class="col s6">
-									<img class="avatares" src="images/avatar.jpg">
-								</div>
-								<div class="col s6 nomeAmigos">
-									<h6>Nome do usuário</h6>
-								</div>
-							</div>
-							<div class="col s1"></div>
-						</div>
 
-						<div class="row">
-							<div class="col s1"></div>
-							<div class="col s5 z-depth-4 caixasAmigos">
-								<div class="col s6">
-									<img class="avatares" src="images/avatar.jpg">
-								</div>
-								<div class="col s6 nomeAmigos">
-									<h6>Nome do usuário</h6>
-								</div>
+							<div class="row linha">
+								<div class="col s0 m1"></div>
+								<div class="col s12 m5 z-depth-1 caixasAmigos">
+									<div class="col s6">
+										<img class="avatares" src="images/avatar.jpg">
+									</div>
+									<div class="col s6 nomeAmigos">
+										<h6>Nome do usuário</h6>
+									</div>
+								</div><!--Primeira linha de amigos-->
+								<div class="col s12 m5 z-depth-1 caixasAmigos">
+									<div class="col s6">
+										<img class="avatares" src="images/avatar.jpg">
+									</div>
+									<div class="col s6 nomeAmigos">
+										<h6>Nome do usuário</h6>
+									</div>
+								</div><!--Primeira linha de amigos-->
 							</div>
-							<div class="col s5 z-depth-4 caixasAmigos">
-								<div class="col s6">
-									<img class="avatares" src="images/avatar.jpg">
-								</div>
-								<div class="col s6 nomeAmigos">
-									<h6>Nome do usuário</h6>
-								</div>
+
+							<div class="row linha">
+								<div class="col s0 m1"></div>
+								<div class="col s12 m5 z-depth-1 caixasAmigos">
+									<div class="col s6">
+										<img class="avatares" src="images/avatar.jpg">
+									</div>
+									<div class="col s6 nomeAmigos">
+										<h6>Nome do usuário</h6>
+									</div>
+								</div><!--Primeira linha de amigos-->
+								<div class="col s12 m5 z-depth-1 caixasAmigos">
+									<div class="col s6">
+										<img class="avatares" src="images/avatar.jpg">
+									</div>
+									<div class="col s6 nomeAmigos">
+										<h6>Nome do usuário</h6>
+									</div>
+								</div><!--Primeira linha de amigos-->
 							</div>
-							<div class="col s1"></div>
 						</div>
 						<!--/Caixas com amigos-->
 					</div><!--Lateral direita da página-->
 				</div>
 			</div>
-				<div class="row">
+				<!--<div class="row">
 					<div class="col s10 m10 l11"></div>
 					<div id="chat" class="col s1 m1 l1">
 						<i class="medium material-icons">forum</i>
 					</div>
-				</div>
+				</div>-->
 			
 			<!--jquery-->
 			<script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" 

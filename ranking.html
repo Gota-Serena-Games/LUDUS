@@ -25,14 +25,20 @@
 						<li><a href="jogos.html">Jogos</a></li>
 						<li><a href="ranking.html">Ranking</a></li>
 						<li><a href="configuracoes.html">Configurações</a></li>
-						<li><a href="#modal1" id="logout" class="waves-effect waves-light btn modal-trigger"><i class="material-icons">power_settings_new</i></a></li>
+						<li><a href="#modal1" id="logout" class="waves-effect waves-light modal-trigger"><i class="material-icons">power_settings_new</i></a></li>
 
 						<!-- Modal Structure -->
 						<div id="modal1" class="modal">
 							<div class="modal-content">
-								<h5>Você tem certeza que deseja desconectar?</h5>
-								<a href="paginaLogin.html" class="btn-small waves-effect waves-light btn logout">Sim</a>
-								<a href="" class="btn-small waves-effect waves-light btn orange">Não</a>
+								<h5 id="mensagemModal">Você tem certeza que deseja desconectar?</h5>
+								<div class="row">
+									<div class="col s3 offset-s3">
+										<a href="paginaLogin.html" class="btn-small waves-effect waves-light btn logout botaoModal">Sim</a>
+									</div>
+									<div class="col s6">
+										<a href="" class="btn-small waves-effect waves-light btn orange">Não</a>
+									</div>
+								</div>
 							</div>
 						</div>
 					</ul>
@@ -40,9 +46,10 @@
 			</nav>
 				
 			<ul class="sidenav" id="mobile-demo">
-				<li><a href="#"><i class="material-icons">clear</i></a></li>
+				<!--<li><a href="#"><i class="material-icons">clear</i></a></li>-->
+				<br><br><br>
 				<li><a href="sobre.html"><i class="material-icons">info</i>Sobre</a></li>
-				<li><a href="jogos2.html"><i class="material-icons">sports_esports</i>Jogos</a></li>
+				<li><a href="jogos.html"><i class="material-icons">sports_esports</i>Jogos</a></li>
 				<li><a href="ranking.html"><i class="material-icons">emoji_events</i>Rankings</a></li>
 				<li><a href="configuracoes.html"><i class="material-icons">settings</i>Configurações</a></li>
 				<li><a href="#"><i class="material-icons">power_settings_new</i>Logout</a></li>
@@ -106,7 +113,7 @@
 								</div>
 							</div>
 							<div class="col s12">
-								<a id="btn" class=" col s6 offset-s3 waves-effect waves-light btn center-align">Ver todos os amigos</a>
+								<a id="btn" href="listaAmigos.html" class="col s6 offset-s3 waves-effect waves-light btn center-align">Ver todos os amigos</a>
 							</div><!--Botão-->
 						</div><!--Perfil de amigos-->
 							<div class="col s12">
@@ -121,34 +128,34 @@
 				<div id="conteudo" class="col s12 m8">
 					<div id="blocoPerfil2" class="col s12 m12 l12 z-depth-4">
 						<div class="col s12 titulos">
-							<h5>RANKING</h5>
+							<h5 class="titulos2">RANKING</h5>
 						</div>
 						<!--Caixa dos jogos-->
 						<div class="col s10 offset-s1 z-depth-4 caixa2">
 							<div class="row">
-								<div class="col s6">
+								<div class="col s12 m6">
 									<div class="card">
     								<div class="card-image waves-effect waves-block waves-light">
-      								<img class="activator" src="images/Empty.png" style="border: black solid 1px; width: 315px; margin: 9px">
+      								<img class="activator imagemDoJogo tamanhoImagem" src="images/imagemRioTietê.png">
     								</div>
     								<div class="card-content">
-      								<span class="card-title activator grey-text text-darken-4">Operação Rio Limpo<i class="material-icons right">more_vert</i></span>
+      								<span class="card-title activator grey-text text-darken-4">Rio Limpo<i class="material-icons right">more_vert</i></span>
       								<button><a href="ranking2.html">Ver Ranking</a></button>
     								</div>
     								<div class="card-reveal">
-      								<span class="card-title grey-text text-darken-4">Operação Rio Limpo<i class="material-icons right">close</i></span>
+      								<span class="card-title grey-text text-darken-4">Rio Limpo<i class="material-icons right">close</i></span>
       								<p>Ajude o seu Zé a limpar o rio Capibaribe.</p>
     								</div>
   								</div>
 								</div>
-								<div class="col s6">
+								<div class="col s12 m6">
 									<div class="card">
     								<div class="card-image waves-effect waves-block waves-light">
-      								<img class="activator" src="images/Empty.png" style="border: black solid 1px; width: 315px; margin: 9px">
+      								<img class="activator imagemDoJogo tamanhoImagem" src="images/Reciclagem-1.jpg">
     								</div>
     								<div class="card-content">
       								<span class="card-title activator grey-text text-darken-4">Reciclagem<i class="material-icons right">more_vert</i></span>
-      								<button><a href="ranking2.html">Ver Ranking</a></button>
+      								<button><a href="ranking2 - reciclagem.html">Ver Ranking</a></button>
     								</div>
     								<div class="card-reveal">
       								<span class="card-title grey-text text-darken-4">Reciclagem<i class="material-icons right">close</i></span>
@@ -158,14 +165,14 @@
 								</div>
 							</div>
 							<div class="row">
-								<div class="col s6">
+								<div class="col s12 m6">
 									<div class="card">
     								<div class="card-image waves-effect waves-block waves-light">
-      								<img class="activator" src="images/Empty.png" style="border: black solid 1px; width: 315px; margin: 9px">
+      								<img class="activator imagemDoJogo tamanhoImagem" src="images/mosquito.jpg">
     								</div>
     								<div class="card-content">
       								<span class="card-title activator grey-text text-darken-4">Mata Mosquito<i class="material-icons right">more_vert</i></span>
-      								<button><a href="ranking2.html">Ver Ranking</a></button>
+      								<button><a href="ranking2 - matamosquito.html">Ver Ranking</a></button>
     								</div>
     								<div class="card-reveal">
       								<span class="card-title grey-text text-darken-4">Mata Mosquito<i class="material-icons right">close</i></span>
@@ -173,14 +180,14 @@
     								</div>
   								</div>
 								</div>
-								<div class="col s6">
+								<div class="col s12 m6">
 									<div class="card">
     								<div class="card-image waves-effect waves-block waves-light">
-      								<img class="activator" src="images/Empty.png" style="border: black solid 1px; width: 315px; margin: 9px">
+      								<img class="activator imagemDoJogo tamanhoImagem" src="images/jorginaldo.jpg">
     								</div>
     								<div class="card-content">
       								<span class="card-title activator grey-text text-darken-4">Jorginaldo<i class="material-icons right">more_vert</i></span>
-      								<button><a href="ranking2.html">Ver Ranking</a></button>
+      								<button><a href="ranking2 - jorginaldo.html">Ver Ranking</a></button>
     								</div>
     								<div class="card-reveal">
       								<span class="card-title grey-text text-darken-4">Jorginaldo<i class="material-icons right">close</i></span>
@@ -194,12 +201,12 @@
 					</div><!--Lateral direita da página-->
 				</div>
 			</div>
-				<div class="row">
+				<!--<div class="row">
 					<div class="col s10 m10 l11"></div>
 					<div id="chat" class="col s1 m1 l1">
 						<i class="medium material-icons">forum</i>
 					</div>
-				</div>
+				</div>-->
 			
 			<!--jquery-->
 			<script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" 
