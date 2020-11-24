@@ -10,12 +10,7 @@ label {
 	color: #2E4057 ;
 }
 
-#top {
-	background-color: #048BA8;
-	padding: 1em;
-	height: 6em;
-	z-index: 1;
-}
+/*Id's*/
 
 #bloco2 {
 	background-color: rgb(153, 194, 77);
@@ -45,8 +40,47 @@ label {
 	/*margin-left: 10px;*/
 }
 
-#teste {
-	background-color: blue;
+#botaoJogar {
+	margin-left: 42%;
+	margin-bottom: 4%;
+}
+
+#btn {
+	margin-top: 10px;
+	font-size: 10px;
+	border-radius: 16px;
+}
+
+#chat i {
+	color: white;
+}
+
+#container {
+	/*background: blue;*/
+	height: 580px;
+	overflow: auto;
+}
+
+#conteudo {
+	height: 800px;
+}
+
+#conteudo {
+	height: 800px;
+	/*overflow: auto;*/
+}
+
+#email {
+	color: #2E4057;
+	background-color: white;
+	border-radius: 16px;
+	height: 40px;
+	margin-top: 5px;
+}
+
+#facebook {
+	color: white;
+	margin: 0px;
 }
 
 #fotoPerfil img {
@@ -63,37 +97,9 @@ label {
 	margin: 10px;
 }
 
-#perfisAmigos h6 {
-	text-align: center;
+#mensagemModal {
 	color: #2E4057;
-}
-
-#perfisAmigos img {
-	margin-top: 10px;
-}
-
-#btn {
-	margin-top: 10px;
-	font-size: 10px;
-	border-radius: 16px;
-}
-
-#chat i {
-	color: white;
-}
-
-#conteudo {
-	height: 800px;
-}
-
-#conteudo {
-	height: 800px;
-	/*overflow: auto;*/
-}
-
-#facebook {
-	color: white;
-	margin: 0px;
+	text-align: center;
 }
 
 #nome {
@@ -104,7 +110,25 @@ label {
 	margin-top: 5px;
 }
 
-#email {
+#perfisAmigos h6 {
+	text-align: center;
+	color: #2E4057;
+}
+
+#perfisAmigos img {
+	margin-top: 10px;
+}
+
+#pesquisarAmigos {
+	color: #2E4057;
+	background-color: white;
+	border-radius: 16px;
+	height: 35px;
+	margin-top: 5px;
+	/*width: 250px;*/
+}
+
+#repeteSenha {
 	color: #2E4057;
 	background-color: white;
 	border-radius: 16px;
@@ -120,26 +144,15 @@ label {
 	margin-top: 5px;
 }
 
-#repeteSenha {
-	color: #2E4057;
-	background-color: white;
-	border-radius: 16px;
-	height: 40px;
-	margin-top: 5px;
+#teste {
+	background-color: blue;
 }
 
-#pesquisarAmigos {
-	color: #2E4057;
-	background-color: white;
-	border-radius: 16px;
-	height: 35px;
-	margin-top: 5px;
-	/*width: 250px;*/
-}
-
-#mensagemModal {
-	color: #2E4057;
-	text-align: center;
+#top {
+	background-color: #048BA8;
+	padding: 1em;
+	height: 6em;
+	z-index: 1;
 }
 
 #usuario h5 {
@@ -148,11 +161,8 @@ label {
 	margin-top: 10px;
 }
 
-#container {
-	/*background: blue;*/
-	height: 580px;
-	overflow: auto;
-}
+
+/*Classes*/
 
 .avatares {
 	width: 120px;
@@ -160,25 +170,20 @@ label {
 	margin-top: 15px;
 }
 
-.nomeAmigos{
-	margin-top: 55px;
-	font-family: "Roboto";
-	text-align: left;
-	color: #2E4057;
+.boasVindas {
+	background-color: rgb(153, 194, 77);
 }
 
-.mensagemModal {
-	color: #2E4057;
+.botao {
+	margin-top: 10px;
+	border-radius: 16px;
+}
+
+.cabecalhos {
 	text-align: center;
-}
-
-.cor {
-	color: #2E4057;
-}
-
-.linha {
-	margin: 0px;
-	padding: 0px;
+	color: white;
+	/*margin-top: 10px;
+	margin-bottom: 30px;*/
 }
 
 .caixa {
@@ -187,40 +192,16 @@ label {
 	border-radius: 16px;
 }
 
-.caixaPequena {
-	background-color: rgb(153, 194, 77);
-	border-radius: 16px;
-	padding-top: 10px;
-	margin-top: 20px;
-	height: 600px;
-}
-
-.caixaPequenaTransparencia {
-	background-color: rgba(153, 194, 77, .8);
-	height: 550px;
-	border-radius: 16px;
-	margin-top: 25px;
-}
-
-.caixaPequena2 {
-	background-color: rgb(153, 194, 77);
-	border-radius: 16px;
-	padding-top: 10px;
-	margin-top: 20px;
-	height: 500px;
-}
-
-.caixaPequenaTransparencia2 {
-	background-color: rgba(153, 194, 77, .8);
-	height: 400px;
-	border-radius: 16px;
-	margin-top: 25px;
-}
 .caixa2 {
 	background-color: rgba(153, 194, 77, .8);
 	/*height: 647px;*/height: 652px;
 	border-radius: 16px;
 	overflow: auto;
+}
+
+.caixa2 p {
+	padding: 15px;
+	padding-bottom: 20px;
 }
 
 .caixa3 {
@@ -237,9 +218,10 @@ label {
 	overflow: auto;
 }
 
-.caixa2 p {
-	padding: 15px;
-	padding-bottom: 20px;
+.caixaConfig {
+	padding-left: 50px;
+	height: 400px;
+	border-radius: 16px;
 }
 
 .caixasAmigos {
@@ -247,6 +229,145 @@ label {
 	height: 150px;
 	border-radius: 16px;
 	margin: 5px 10px;
+}
+
+.caixasAmigos {
+	padding-left: 50px;
+	height: 150px;
+}
+
+.caixaPequena {
+	background-color: rgb(153, 194, 77);
+	border-radius: 16px;
+	padding-top: 10px;
+	margin-top: 20px;
+	height: 600px;
+}
+
+.caixaPequena2 {
+	background-color: rgb(153, 194, 77);
+	border-radius: 16px;
+	padding-top: 10px;
+	margin-top: 20px;
+	height: 500px;
+}
+
+.caixaPequenaTransparencia {
+	background-color: rgba(153, 194, 77, .8);
+	height: 550px;
+	border-radius: 16px;
+	margin-top: 25px;
+}
+
+.caixaPequenaTransparencia2 {
+	background-color: rgba(153, 194, 77, .8);
+	height: 400px;
+	border-radius: 16px;
+	margin-top: 25px;
+}
+
+.cards {
+	border: black solid 1px; 
+	width: 315px; 
+	margin: 15px;
+}
+
+.config {
+	text-align: justify;
+	color: #2E4057;
+}
+
+.cor {
+	color: #2E4057;
+}
+
+.desconectar {
+	columns: blue;
+}
+
+.descricoes {
+	text-align: justify;
+	color: #2E4057;
+	/*margin-top: 10px;
+	margin-bottom: 30px;*/
+}
+
+.imagemDoJogo {
+	padding: 3%;
+	padding-top: 5%;
+	border: 2px solid #2E4057;
+}
+
+.inputs {
+	font-family: "Roboto";
+	color: #2E4057 ;
+}
+
+.linha {
+	margin: 0px;
+	padding: 0px;
+}
+
+.mensagemModal {
+	color: #2E4057;
+	text-align: center;
+}
+
+.nomeAmigos{
+	margin-top: 55px;
+	font-family: "Roboto";
+	text-align: left;
+	color: #2E4057;
+}
+
+.opcoesConfig {
+	margin-top: 20px;
+	color: #2E4057;
+	height: 180px;
+	/*text-align: left;*/
+}
+
+.opcoesConfig h6 {
+	text-align: center;
+}
+
+.sobreOJogo {
+	padding-top: 5px;
+	margin: 20px;
+	color: #2E4057;
+	text-align: justify;
+}
+
+.subtitulos {
+	text-align: center;
+	font-size: 20px
+	color: #2E4057;
+	margin-top: 20px;
+	margin-bottom: 5px;
+}
+
+.tabelas {
+	margin-top: 30px;
+	color: #2E4057;
+	font-family: "Roboto";
+}
+
+.tamanhoImagem {
+	width: 254px;
+	height: 162px;
+}
+
+.tela {
+	background: rgb(153, 194, 77);
+}
+
+.telaBoasVindas {
+	margin-top: 250px;
+	color: white;
+}
+
+.telaInicial{
+	margin-top: 250px;
 }
 
 .titulos {
@@ -263,70 +384,9 @@ label {
 	margin-bottom: 5px;
 }
 
-.subtitulos {
-	text-align: center;
-	font-size: 20px
-	color: #2E4057;
-	margin-top: 20px;
-	margin-bottom: 5px;
-}
 
-.cabecalhos {
-	text-align: center;
-	color: white;
-	/*margin-top: 10px;
-	margin-bottom: 30px;*/
-}
+/*Animações*/
 
-.descricoes {
-	text-align: justify;
-	color: #2E4057;
-	/*margin-top: 10px;
-	margin-bottom: 30px;*/
-}
-.config {
-	text-align: justify;
-	color: #2E4057;
-}
-
-.botao {
-	margin-top: 10px;
-	border-radius: 16px;
-}
-
-.inputs {
-	font-family: "Roboto";
-	color: #2E4057 ;
-}
-
-.tela {
-	background: rgb(153, 194, 77);
-}
-
-.boasVindas {
-	background-color: rgb(153, 194, 77);
-}
-
-.telaBoasVindas {
-	margin-top: 250px;
-	color: white;
-}
-
-.telaInicial{
-	margin-top: 250px;
-}
-
-.cards {
-	border: black solid 1px; 
-	width: 315px; 
-	margin: 15px;
-}
-
-.tabelas {
-	margin-top: 30px;
-	color: #2E4057;
-	font-family: "Roboto";
-}
 
 .fadeIn {
 -webkit-animation: fadeIn 3s ease-in-out;
@@ -356,6 +416,10 @@ animation: fadeIn 3s ease-in-out;
 0% { opacity: 0; }
 100% { opacity: 1; }
 }
+
+
+/*Media Queries*/
+
 
 @media only screen and (min-width:601px) and (max-width: 992px){
 
@@ -404,62 +468,6 @@ animation: fadeIn 3s ease-in-out;
 
 }
 
-#botaoJogar {
-	margin-left: 42%;
-	margin-bottom: 4%;
-}
-.imagemDoJogo {
-	padding: 3%;
-	padding-top: 5%;
-	border: 2px solid #2E4057;
-}
-
-.tamanhoImagem {
-	width: 254px;
-	height: 162px;
-}
-
-.sobreOJogo {
-	padding-top: 5px;
-	margin: 20px;
-	color: #2E4057;
-	text-align: justify;
-}
-
-.desconectar {
-	columns: blue;
-}
-
-@media only screen and (max-width:993px){
-	/*#bloco1{
-
-		padding-left: 17%;
-	
-	}*/
-	
-}
-
-.opcoesConfig {
-	margin-top: 20px;
-	color: #2E4057;
-	height: 180px;
-	/*text-align: left;*/
-}
-
-.opcoesConfig h6 {
-	text-align: center;
-}
-
-.caixasAmigos {
-	padding-left: 50px;
-	height: 150px;
-}
-
-.caixaConfig {
-	padding-left: 50px;
-	height: 400px;
-	border-radius: 16px;
-}
 @media only screen and (max-width: 600px) {
 	body {
 		margin-bottom: 0px;
