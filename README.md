@@ -3,7 +3,7 @@
 <br>
 +==========================================+
 <br><br>
-<p>O **LUDUS** é um sistema web que funciona como uma rede social. Os usuários criam uma conta e podem usufruir das funcionalidades do mesmo. O sistema conta com jogos que podem ser jogados por pessoas de todas as idades. Os jogos contém teor educacional, ensinando, através de gamificação, conceitos de sustentabilidade ambiental. Cada vez que um usuário joga um jogo, recebe pontos que são registrados num ranking geral. Assim, os usuários podem disputar entre si, demonstrando quem possui maior habilidade em cada jogo e aprendendo ao mesmo tempo.<p>
+<p>O <b>LUDUS</b> é um sistema web que funciona como uma rede social. Os usuários criam uma conta e podem usufruir das funcionalidades do mesmo. O sistema conta com jogos que podem ser jogados por pessoas de todas as idades. Os jogos contém teor educacional, ensinando, através de gamificação, conceitos de sustentabilidade ambiental. Cada vez que um usuário joga um jogo, recebe pontos que são registrados num ranking geral. Assim, os usuários podem disputar entre si, demonstrando quem possui maior habilidade em cada jogo e aprendendo ao mesmo tempo.<p>
 <br>
 +==========================================+
 <br>
