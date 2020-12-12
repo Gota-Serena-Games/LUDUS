@@ -436,10 +436,6 @@ animation: fadeIn 3s ease-in-out;
 
 @media only screen and (min-width:993px){
 
-	#conteudo {
-		width: 60%;
-		margin-left: 2%;
-	}
 
 	#blocoPerfil {
 		background-color: rgb(153, 194, 77);
@@ -466,9 +462,15 @@ animation: fadeIn 3s ease-in-out;
 		margin-bottom: 4%;
 	}
 
+	#conteudo {
+		width: 60%;
+		margin-left: 2%;
+	}
+
 }
 
 @media only screen and (max-width: 600px) {
+	
 	body {
 		margin-bottom: 0px;
 	}
