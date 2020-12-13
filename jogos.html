@@ -24,7 +24,7 @@
 						<li><a href="sobre.html">Sobre</a></li>
 						<li><a href="jogos.html">Jogos</a></li>
 						<li><a href="ranking.html">Ranking</a></li>
-						<li><a href="chat.html">Chat</a></li>
+						<li><a href="#" id="chat">Chat<span class="new badge" id="badge"></span></a></li>
 						<li><a href="configuracoes.html">Configurações</a></li>
 						<li><a href="#modal1" id="logout" class="waves-effect waves-light modal-trigger"><i class="material-icons">power_settings_new</i></a></li>
 
@@ -215,6 +215,55 @@
 						</div>
 						<!--/Caixa dos jogos-->
 					</div><!--Lateral direita da página-->
+					<div id="bloco4" class="col s0 m2 l4 offset-l8 z-depth-5">
+					<div class="row">
+						<div class="col s12">
+							<input type="text" id="pesquisarConversas" placeholder="   Pesquisar">
+						</div>
+					</div><!--/Input-->
+					<div class="row" id="conversas">
+						<div class="row linhaChat">
+							<div class="col s3">
+								<a href="#"><img src="images/mariana.jpg" alt="" class="circle responsive-img center-align fotoChat" onclick="irConversa()"></a>
+							</div>
+							<div class="col s9 nomeUsuarioChat" onclick="irConversa()">
+								<a href="#"><h6>limatainer</h6></a>
+							</div>
+							<div class="col s9 conversaChat" onclick="irConversa()">
+								<a href="#"><p>Você: Olá, tudo bem?</p></a>
+							</div>
+						</div><!--Fim Conversa-->
+					</div>
+				</div><!--/Chat-->
+				<div id="bloco5" class="col s0 m2 l4 offset-l8 z-depth-5">
+					<div class="row heading">
+						<div class="col s2">
+							<a href="#" onclick="voltar()"><i class="material-icons medium setaVolta">keyboard_arrow_left</i></a>
+						</div>
+						<div class="col s3">
+							<a href="perfilAmigo.html"><img src="images/mariana.jpg" alt="" class="circle responsive-img center-align fotoChat2"></a>
+						</div>
+						<div class="col s7 nomeUsuarioChat2">
+							<a href="perfilAmigo.html"><h6>limatainer</h6></a>
+						</div>
+					</div><!--/Heading-->
+					<div class="row">
+						<div class="col s8 contentChat z-depth-5">
+							<p>Olá pessoa! Como você está? Faz tanto tempo que não nos vemos, né?</p>
+						</div>
+						<div class="col s8 offset-s4 responseChat z-depth-5">
+							<p>Olá pessoa! Como você está? Faz tanto tempo que não nos vemos, né?</p>
+						</div>
+					</div><!--/Conversas-->
+					<div class="row">
+						<div class="col s9">
+							<input type="text" id="escreverMensagem" placeholder="   aA">
+						</div>
+						<div class="col s3">
+							<a href="#" onclick="adicionarMensagem();"><i class="material-icons small setaEnviar">send</i></a>
+						</div>
+					</div>
+				</div><!--/ChatUsuario-->
 				</div>
 			</div>
 				<!--<div class="row">
@@ -231,6 +280,7 @@
 			<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
       <script src="js/auto.js"></script>
       <script src="js/script.js"></script>
+      <script type="text/javascript" src="js/script5.js"></script>
       <script type="text/javascript">
       window.addEventListener("load", function(){
 				var nome = localStorage.getItem("nome");

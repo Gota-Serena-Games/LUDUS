@@ -21,6 +21,30 @@ label {
 	padding-bottom: 35px;
 }
 
+#bloco4 {
+	position: absolute;
+	top: 255px;
+	right: 0px;
+	background-color: #048BA8;
+	height: 650px;
+	border-top-left-radius: 16px;
+	border-top-right-radius: 16px;
+	padding-top: 20px;
+	padding-bottom: 35px;
+}
+
+#bloco5 {
+	position: absolute;
+	top: 255px;
+	right: 0px;
+	background-color: rgb(153, 194, 77);
+	height: 650px;
+	border-top-left-radius: 16px;
+	border-top-right-radius: 16px;
+	padding-top: 20px;
+	padding-bottom: 35px;
+}
+
 #blocoPerfil {
 	background-color: rgb(153, 194, 77);
 	height: 800px;
@@ -70,12 +94,31 @@ label {
 	/*overflow: auto;*/
 }
 
+#conversas {
+	width: 450px;
+	height: 550px;
+	overflow-x: hidden;
+	overflow-y: auto;
+}
+
 #email {
 	color: #2E4057;
 	background-color: white;
 	border-radius: 16px;
 	height: 40px;
 	margin-top: 5px;
+}
+
+#escreverMensagem {
+	position: absolute;
+	top: 590px;
+	color: #2E4057;
+	background-color: white;
+	border-radius: 16px;
+	height: 35px;
+	margin-top: 15px;
+	margin-left: 0px;
+	width: 380px;
 }
 
 #facebook {
@@ -126,6 +169,16 @@ label {
 	height: 35px;
 	margin-top: 5px;
 	/*width: 250px;*/
+}
+
+#pesquisarConversas {
+	color: #2E4057;
+	background-color: white;
+	border-radius: 16px;
+	height: 35px;
+	margin-top: 15px;
+	margin-left: 23px;
+	width: 380px;
 }
 
 #repeteSenha {
@@ -277,6 +330,25 @@ label {
 	color: #2E4057;
 }
 
+.contentChat {
+	background: #048BA8;
+	position: relative;
+	top: 70px;
+	height: auto;
+	width: 80%;
+	border-radius: 16px;
+	font-family: "Roboto";
+	color: #2E4057;
+}
+
+.conversaChat p {
+	font-family: "Roboto";
+	color: #2E4057;
+	/*background: yellow;*/
+	width: 250px;
+	margin-top: 5px;
+}
+
 .cor {
 	color: #2E4057;
 }
@@ -290,6 +362,28 @@ label {
 	color: #2E4057;
 	/*margin-top: 10px;
 	margin-bottom: 30px;*/
+}
+
+.fotoChat {
+	margin-top: 10px;
+	margin-left: 30px;
+	width: 70px;
+}
+
+.fotoChat2 {
+	margin-top: 5px;
+	margin-left: -30px;
+	width: 70px;
+}
+
+.heading {
+	background: #048BA8;
+	height: 80px;
+	width: 450px;
+	border-top-left-radius: 16px;
+	border-top-right-radius: 16px;
+	position: absolute;
+	top: 0px;
 }
 
 .imagemDoJogo {
@@ -308,6 +402,10 @@ label {
 	padding: 0px;
 }
 
+.linhaChat {
+	/*background: green;*/
+}
+
 .mensagemModal {
 	color: #2E4057;
 	text-align: center;
@@ -320,6 +418,22 @@ label {
 	color: #2E4057;
 }
 
+.nomeUsuarioChat h6{
+	font-family: "Roboto";
+	color: #fff;
+	width: 250px;
+	margin-top: 20px;
+	/*background: red;*/
+}
+
+.nomeUsuarioChat2 h6{
+	font-family: "Roboto";
+	color: #fff;
+	width: 250px;
+	margin-top: 33px;
+	margin-left: -50px;
+	/*background: red;*/
+}
 .opcoesConfig {
 	margin-top: 20px;
 	color: #2E4057;
@@ -329,6 +443,45 @@ label {
 
 .opcoesConfig h6 {
 	text-align: center;
+}
+
+.responseChat {
+	background: rgba(153, 194, 77, .8);
+	position: relative;
+	top: 70px;
+	margin-top: 10px;
+	height: auto;
+	width: 80%;
+	border-radius: 16px;
+	font-family: "Roboto";
+	color: #2E4057;
+}
+
+.responseChat2 {
+	background: rgba(153, 194, 77, .8);
+	/*position: relative;*/
+	/*top: 70px;*/
+	margin-top: 10px;
+	height: auto;
+	width: 80%;
+	border-radius: 16px;
+	font-family: "Roboto";
+	color: #2E4057;
+}
+
+.setaVolta {
+	color: #fff;
+	margin-top: 10px;
+	margin-left: -15px;
+}
+
+.setaEnviar {
+	color: #fff;
+	margin-top: 10px;
+	margin-left: 60px;
+	position: relative;
+	top: 400px;
+
 }
 
 .sobreOJogo {
